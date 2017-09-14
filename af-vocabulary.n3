@@ -9,7 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <file:///Users/alo/fast/dev/onto/af//vocabulary/af-vocabulary.n3> a owl:Ontology ;
-    ns1:date "2017-09-14T17:54:23.185425" ;
+    ns1:date "2017-09-14T18:01:25.911715" ;
     ns1:description "This is a vocuabulary of common terms used in the music information retrieval workflows. It relies on the Audio Feature Ontology for basic terminology: https://w3id.org/afo/onto/1.1#"@en ;
     ns1:title "Audio Feature Vocabulary"@en ;
     owl:versionInfo "Version 1.1" .
@@ -2448,7 +2448,7 @@ afv:AdaptiveTimeFrequencyTransformComp a owl:Class ;
 
 afv:AdaptiveTimeFrequencyTransformModel a afo:Model ;
     rdfs:label "AdaptiveTimeFrequencyTransform model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:AdaptiveTimeFrequencyTransform_operation_sequence .
 
@@ -2469,7 +2469,7 @@ afv:AdaptiveTimeFrequencyTransform_operation_sequence a afo:OperationSequence ;
 
 afv:AmplitudeDescriptorModel a afo:Model ;
     rdfs:label "AmplitudeDescriptor model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:AmplitudeDescriptor_operation_sequence .
 
@@ -2514,7 +2514,7 @@ afv:AmplitudeDescriptor_operation_sequence a afo:OperationSequence ;
 
 afv:AuditoryFilterBankTemporalEnvelopesModel a afo:Model ;
     rdfs:label "AuditoryFilterBankTemporalEnvelopes model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:AuditoryFilterBankTemporalEnvelopes_operation_sequence .
 
@@ -2553,7 +2553,7 @@ afv:AuditoryFilterBankTemporalEnvelopes_operation_sequence a afo:OperationSequen
 
 afv:AutocorrelationMFCCsModel a afo:Model ;
     rdfs:label "AutocorrelationMFCCs model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:AutocorrelationMFCCs_operation_sequence .
 
@@ -2604,7 +2604,7 @@ afv:AutocorrelationMFCCs_operation_sequence a afo:OperationSequence ;
 
 afv:BandPeriodicityModel a afo:Model ;
     rdfs:label "BandPeriodicity model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:BandPeriodicity_operation_sequence .
 
@@ -2643,7 +2643,7 @@ afv:BandPeriodicity_operation_sequence a afo:OperationSequence ;
 
 afv:BandwidthModel a afo:Model ;
     rdfs:label "Bandwidth model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:Bandwidth_operation_sequence .
 
@@ -2683,7 +2683,7 @@ afv:Bandwidth_operation_sequence a afo:OperationSequence ;
 
 afv:BarkscaleFrequencyCepstralCoefficientsModel a afo:Model ;
     rdfs:label "BarkscaleFrequencyCepstralCoefficients model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:BarkscaleFrequencyCepstralCoefficients_operation_sequence .
 
@@ -2722,7 +2722,7 @@ afv:BarkscaleFrequencyCepstralCoefficients_operation_sequence a afo:OperationSeq
 
 afv:BeatHistogramModel a afo:Model ;
     rdfs:label "BeatHistogram model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:BeatHistogram_operation_sequence .
 
@@ -2773,7 +2773,7 @@ afv:BeatHistogram_operation_sequence a afo:OperationSequence ;
 
 afv:BeatSpectrumModel a afo:Model ;
     rdfs:label "BeatSpectrum model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:BeatSpectrum_operation_sequence .
 
@@ -2818,7 +2818,7 @@ afv:BeatSpectrum_operation_sequence a afo:OperationSequence ;
 
 afv:BeatTrackerModel a afo:Model ;
     rdfs:label "BeatTracker model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:BeatTracker_operation_sequence .
 
@@ -2869,7 +2869,7 @@ afv:BeatTracker_operation_sequence a afo:OperationSequence ;
 
 afv:ChromaCENSFeaturesModel a afo:Model ;
     rdfs:label "ChromaCENSFeatures model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:ChromaCENSFeatures_operation_sequence .
 
@@ -2908,7 +2908,7 @@ afv:ChromaCENSFeatures_operation_sequence a afo:OperationSequence ;
 
 afv:ChromagramModel a afo:Model ;
     rdfs:label "Chromagram model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:Chromagram_operation_sequence .
 
@@ -2947,7 +2947,7 @@ afv:ConstantQTransform a owl:Class ;
 
 afv:CyclicBeatSpectrumModel a afo:Model ;
     rdfs:label "CyclicBeatSpectrum model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:CyclicBeatSpectrum_operation_sequence .
 
@@ -3010,7 +3010,7 @@ afv:CyclicBeatSpectrum_operation_sequence a afo:OperationSequence ;
 
 afv:DWPTbasedRhythmFeatureModel a afo:Model ;
     rdfs:label "DWPTbasedRhythmFeature model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:DWPTbasedRhythmFeature_operation_sequence .
 
@@ -3049,7 +3049,7 @@ afv:DWPTbasedRhythmFeature_operation_sequence a afo:OperationSequence ;
 
 afv:DaubechiesWaveletCoefficientHistogramModel a afo:Model ;
     rdfs:label "DaubechiesWaveletCoefficientHistogram model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:DaubechiesWaveletCoefficientHistogram_operation_sequence .
 
@@ -3076,7 +3076,7 @@ afv:DaubechiesWaveletCoefficientHistogram_operation_sequence a afo:OperationSequ
 
 afv:DistortionDiscriminantAnalysisModel a afo:Model ;
     rdfs:label "DistortionDiscriminantAnalysis model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:DistortionDiscriminantAnalysis_operation_sequence .
 
@@ -3121,7 +3121,7 @@ afv:GroupDelayFunction a owl:Class ;
 
 afv:HarmonicCoefficientModel a afo:Model ;
     rdfs:label "HarmonicCoefficient model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:HarmonicCoefficient_operation_sequence .
 
@@ -3148,7 +3148,7 @@ afv:HarmonicCoefficient_operation_sequence a afo:OperationSequence ;
 
 afv:HarmonicConcentrationModel a afo:Model ;
     rdfs:label "HarmonicConcentration model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:HarmonicConcentration_operation_sequence .
 
@@ -3187,7 +3187,7 @@ afv:HarmonicConcentration_operation_sequence a afo:OperationSequence ;
 
 afv:HarmonicDerivateModel a afo:Model ;
     rdfs:label "HarmonicDerivate model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:HarmonicDerivate_operation_sequence .
 
@@ -3220,7 +3220,7 @@ afv:HarmonicDerivate_operation_sequence a afo:OperationSequence ;
 
 afv:HarmonicEnergyEntropyModel a afo:Model ;
     rdfs:label "HarmonicEnergyEntropy model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:HarmonicEnergyEntropy_operation_sequence .
 
@@ -3253,7 +3253,7 @@ afv:HarmonicEnergyEntropy_operation_sequence a afo:OperationSequence ;
 
 afv:HarmonicProminenceModel a afo:Model ;
     rdfs:label "HarmonicProminence model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:HarmonicProminence_operation_sequence .
 
@@ -3286,7 +3286,7 @@ afv:IndependentComponentAnalysis a owl:Class ;
 
 afv:InharmonicityModel a afo:Model ;
     rdfs:label "Inharmonicity model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:Inharmonicity_operation_sequence .
 
@@ -3319,7 +3319,7 @@ afv:Inharmonicity_operation_sequence a afo:OperationSequence ;
 
 afv:IntegralLoudnessModel a afo:Model ;
     rdfs:label "IntegralLoudness model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:IntegralLoudness_operation_sequence .
 
@@ -3370,7 +3370,7 @@ afv:IntegralLoudness_operation_sequence a afo:OperationSequence ;
 
 afv:JointAcousticandModuluationFrequencyModel a afo:Model ;
     rdfs:label "JointAcousticandModuluationFrequency model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:JointAcousticandModuluationFrequency_operation_sequence .
 
@@ -3415,7 +3415,7 @@ afv:JointAcousticandModuluationFrequency_operation_sequence a afo:OperationSeque
 
 afv:LineSpectralFrequenciesModel a afo:Model ;
     rdfs:label "LineSpectralFrequencies model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:LineSpectralFrequencies_operation_sequence .
 
@@ -3442,7 +3442,7 @@ afv:LineSpectralFrequencies_operation_sequence a afo:OperationSequence ;
 
 afv:LinearPredictionCepstralCoefficientsModel a afo:Model ;
     rdfs:label "LinearPredictionCepstralCoefficients model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:LinearPredictionCepstralCoefficients_operation_sequence .
 
@@ -3476,7 +3476,7 @@ afv:LinearPredictionCepstralCoefficients_operation_sequence a afo:OperationSeque
 
 afv:LinearPredictionZCRModel a afo:Model ;
     rdfs:label "LinearPredictionZCR model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:LinearPredictionZCR_operation_sequence .
 
@@ -3509,7 +3509,7 @@ afv:LinearPredictionZCR_operation_sequence a afo:OperationSequence ;
 
 afv:LinearPredictiveCodingModel a afo:Model ;
     rdfs:label "LinearPredictiveCoding model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:LinearPredictiveCoding_operation_sequence .
 
@@ -3544,7 +3544,7 @@ afv:LinearPredictiveCoding_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7AudioFundamentalFrequencyModel a afo:Model ;
     rdfs:label "MPEG7AudioFundamentalFrequency model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7AudioFundamentalFrequency_operation_sequence .
 
@@ -3571,7 +3571,7 @@ afv:MPEG7AudioFundamentalFrequency_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7AudioHarmonicityModel a afo:Model ;
     rdfs:label "MPEG7AudioHarmonicity model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7AudioHarmonicity_operation_sequence .
 
@@ -3598,7 +3598,7 @@ afv:MPEG7AudioHarmonicity_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7AudioSpectrumBasisModel a afo:Model ;
     rdfs:label "MPEG7AudioSpectrumBasis model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7AudioSpectrumBasis_operation_sequence .
 
@@ -3650,7 +3650,7 @@ afv:MPEG7AudioSpectrumBasis_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7AudioSpectrumCentroidModel a afo:Model ;
     rdfs:label "MPEG7AudioSpectrumCentroid model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7AudioSpectrumCentroid_operation_sequence .
 
@@ -3689,7 +3689,7 @@ afv:MPEG7AudioSpectrumCentroid_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7AudioSpectrumSpreadModel a afo:Model ;
     rdfs:label "MPEG7AudioSpectrumSpread model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7AudioSpectrumSpread_operation_sequence .
 
@@ -3728,7 +3728,7 @@ afv:MPEG7AudioSpectrumSpread_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7AudioWaveformModel a afo:Model ;
     rdfs:label "MPEG7AudioWaveform model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7AudioWaveform_operation_sequence .
 
@@ -3755,7 +3755,7 @@ afv:MPEG7AudioWaveform_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7HarmonicSpectralCentroidModel a afo:Model ;
     rdfs:label "MPEG7HarmonicSpectralCentroid model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7HarmonicSpectralCentroid_operation_sequence .
 
@@ -3788,7 +3788,7 @@ afv:MPEG7HarmonicSpectralCentroid_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7HarmonicSpectralDeviationModel a afo:Model ;
     rdfs:label "MPEG7HarmonicSpectralDeviation model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7HarmonicSpectralDeviation_operation_sequence .
 
@@ -3833,7 +3833,7 @@ afv:MPEG7HarmonicSpectralDeviation_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7HarmonicSpectralSpreadModel a afo:Model ;
     rdfs:label "MPEG7HarmonicSpectralSpread model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7HarmonicSpectralSpread_operation_sequence .
 
@@ -3866,7 +3866,7 @@ afv:MPEG7HarmonicSpectralSpread_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7HarmonicSpectralVariationModel a afo:Model ;
     rdfs:label "MPEG7HarmonicSpectralVariation model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7HarmonicSpectralVariation_operation_sequence .
 
@@ -3899,7 +3899,7 @@ afv:MPEG7HarmonicSpectralVariation_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7LogAttackTimeModel a afo:Model ;
     rdfs:label "MPEG7LogAttackTime model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7LogAttackTime_operation_sequence .
 
@@ -3932,7 +3932,7 @@ afv:MPEG7LogAttackTime_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7SpectralCentroidModel a afo:Model ;
     rdfs:label "MPEG7SpectralCentroid model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7SpectralCentroid_operation_sequence .
 
@@ -3953,7 +3953,7 @@ afv:MPEG7SpectralCentroid_operation_sequence a afo:OperationSequence ;
 
 afv:MPEG7TemporalCentroidModel a afo:Model ;
     rdfs:label "MPEG7TemporalCentroid model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MPEG7TemporalCentroid_operation_sequence .
 
@@ -3980,7 +3980,7 @@ afv:MPEG7TemporalCentroid_operation_sequence a afo:OperationSequence ;
 
 afv:MelscaleFrequencyCepstralCoefficientsModel a afo:Model ;
     rdfs:label "MelscaleFrequencyCepstralCoefficients model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MelscaleFrequencyCepstralCoefficients_operation_sequence .
 
@@ -4025,7 +4025,7 @@ afv:Minimum a owl:Class ;
 
 afv:ModifiedGroupDelayModel a afo:Model ;
     rdfs:label "ModifiedGroupDelay model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:ModifiedGroupDelay_operation_sequence .
 
@@ -4072,7 +4072,7 @@ afv:ModulatedComplexLappedTransform a owl:Class ;
 
 afv:ModulationEnergyModel a afo:Model ;
     rdfs:label "ModulationEnergy model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:ModulationEnergy_operation_sequence .
 
@@ -4123,7 +4123,7 @@ afv:ModulationEnergy_operation_sequence a afo:OperationSequence ;
 
 afv:ModulationHarmonicCoefficientsModel a afo:Model ;
     rdfs:label "ModulationHarmonicCoefficients model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:ModulationHarmonicCoefficients_operation_sequence .
 
@@ -4162,7 +4162,7 @@ afv:ModulationHarmonicCoefficients_operation_sequence a afo:OperationSequence ;
 
 afv:MultiresolutionEntropyModel a afo:Model ;
     rdfs:label "MultiresolutionEntropy model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:MultiresolutionEntropy_operation_sequence .
 
@@ -4201,7 +4201,7 @@ afv:MultiresolutionEntropy_operation_sequence a afo:OperationSequence ;
 
 afv:NoiseRobustAuditoryFeatureModel a afo:Model ;
     rdfs:label "NoiseRobustAuditoryFeature model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:NoiseRobustAuditoryFeature_operation_sequence .
 
@@ -4258,7 +4258,7 @@ afv:Percentile a owl:Class ;
 
 afv:PerceptualLinearPredictionModel a afo:Model ;
     rdfs:label "PerceptualLinearPrediction model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:PerceptualLinearPrediction_operation_sequence .
 
@@ -4321,7 +4321,7 @@ afv:PhaseSpaceEmbedding a owl:Class ;
 
 afv:PhaseSpaceFeaturesModel a afo:Model ;
     rdfs:label "PhaseSpaceFeatures model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:PhaseSpaceFeatures_operation_sequence .
 
@@ -4342,7 +4342,7 @@ afv:PhaseSpaceFeatures_operation_sequence a afo:OperationSequence ;
 
 afv:PitchHistogramModel a afo:Model ;
     rdfs:label "PitchHistogram model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:PitchHistogram_operation_sequence .
 
@@ -4382,13 +4382,13 @@ afv:PitchHistogram_operation_sequence a afo:OperationSequence ;
 
 afv:PitchModel a afo:Model ;
     rdfs:label "Pitch model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:Pitch_operation_sequence .
 
 afv:PitchProfileModel a afo:Model ;
     rdfs:label "PitchProfile model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:PitchProfile_operation_sequence .
 
@@ -4451,7 +4451,7 @@ afv:PitchProfile_operation_sequence a afo:OperationSequence ;
 
 afv:PitchSynchronousZCPAModel a afo:Model ;
     rdfs:label "PitchSynchronousZCPA model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:PitchSynchronousZCPA_operation_sequence .
 
@@ -4550,7 +4550,7 @@ afv:Power a owl:Class ;
 
 afv:PsychoacousticalPitchModel a afo:Model ;
     rdfs:label "PsychoacousticalPitch model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:PsychoacousticalPitch_operation_sequence .
 
@@ -4589,7 +4589,7 @@ afv:PsychoacousticalPitch_operation_sequence a afo:OperationSequence ;
 
 afv:PulseMetricModel a afo:Model ;
     rdfs:label "PulseMetric model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:PulseMetric_operation_sequence .
 
@@ -4628,7 +4628,7 @@ afv:PulseMetric_operation_sequence a afo:OperationSequence ;
 
 afv:RatescalefrequencyFeaturesModel a afo:Model ;
     rdfs:label "RatescalefrequencyFeatures model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:RatescalefrequencyFeatures_operation_sequence .
 
@@ -4691,7 +4691,7 @@ afv:Regression a owl:Class ;
 
 afv:RelativeSpectralPLPModel a afo:Model ;
     rdfs:label "RelativeSpectralPLP model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:RelativeSpectralPLP_operation_sequence .
 
@@ -4766,7 +4766,7 @@ afv:RelativeSpectralPLP_operation_sequence a afo:OperationSequence ;
 
 afv:RhythmPatternsModel a afo:Model ;
     rdfs:label "RhythmPatterns model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:RhythmPatterns_operation_sequence .
 
@@ -4835,7 +4835,7 @@ afv:RhythmPatterns_operation_sequence a afo:OperationSequence ;
 
 afv:SharpnessModel a afo:Model ;
     rdfs:label "Sharpness model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:Sharpness_operation_sequence .
 
@@ -4880,7 +4880,7 @@ afv:Sharpness_operation_sequence a afo:OperationSequence ;
 
 afv:ShortTimeEnergyModel a afo:Model ;
     rdfs:label "ShortTimeEnergy model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:ShortTimeEnergy_operation_sequence .
 
@@ -4907,7 +4907,7 @@ afv:SingularValueDecomposition a owl:Class ;
 
 afv:SoneModel a afo:Model ;
     rdfs:label "Sone model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:Sone_operation_sequence .
 
@@ -4952,7 +4952,7 @@ afv:Sone_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralCenterModel a afo:Model ;
     rdfs:label "SpectralCenter model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralCenter_operation_sequence .
 
@@ -4985,7 +4985,7 @@ afv:SpectralCenter_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralCentroidModel a afo:Model ;
     rdfs:label "SpectralCentroid model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralCentroid_operation_sequence .
 
@@ -5026,7 +5026,7 @@ afv:SpectralCentroid_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralCrestModel a afo:Model ;
     rdfs:label "SpectralCrest model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralCrest_operation_sequence .
 
@@ -5072,7 +5072,7 @@ afv:SpectralCrest_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralDispersionModel a afo:Model ;
     rdfs:label "SpectralDispersion model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralDispersion_operation_sequence .
 
@@ -5111,7 +5111,7 @@ afv:SpectralDispersion_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralFlatnessModel a afo:Model ;
     rdfs:label "SpectralFlatness model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralFlatness_operation_sequence .
 
@@ -5151,7 +5151,7 @@ afv:SpectralFlatness_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralFluxModel a afo:Model ;
     rdfs:label "SpectralFlux model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralFlux_operation_sequence .
 
@@ -5184,7 +5184,7 @@ afv:SpectralFlux_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralPeakStructureModel a afo:Model ;
     rdfs:label "SpectralPeakStructure model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralPeakStructure_operation_sequence .
 
@@ -5229,7 +5229,7 @@ afv:SpectralPeakStructure_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralPeaksModel a afo:Model ;
     rdfs:label "SpectralPeaks model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralPeaks_operation_sequence .
 
@@ -5262,7 +5262,7 @@ afv:SpectralPeaks_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralRolloffModel a afo:Model ;
     rdfs:label "SpectralRolloff model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralRolloff_operation_sequence .
 
@@ -5289,7 +5289,7 @@ afv:SpectralRolloff_operation_sequence a afo:OperationSequence ;
 
 afv:SpectralSlopeModel a afo:Model ;
     rdfs:label "SpectralSlope model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SpectralSlope_operation_sequence .
 
@@ -5316,7 +5316,7 @@ afv:SpectralSlope_operation_sequence a afo:OperationSequence ;
 
 afv:SubbandEnergyRatioModel a afo:Model ;
     rdfs:label "SubbandEnergyRatio model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SubbandEnergyRatio_operation_sequence .
 
@@ -5355,7 +5355,7 @@ afv:SubbandEnergyRatio_operation_sequence a afo:OperationSequence ;
 
 afv:SubbandSpectralFluxModel a afo:Model ;
     rdfs:label "SubbandSpectralFlux model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:SubbandSpectralFlux_operation_sequence .
 
@@ -5406,7 +5406,7 @@ afv:SubbandSpectralFlux_operation_sequence a afo:OperationSequence ;
 
 afv:VolumeModel a afo:Model ;
     rdfs:label "Volume model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:Volume_operation_sequence .
 
@@ -5427,7 +5427,7 @@ afv:Volume_operation_sequence a afo:OperationSequence ;
 
 afv:ZeroCrossingPeakAmplitudesModel a afo:Model ;
     rdfs:label "ZeroCrossingPeakAmplitudes model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:ZeroCrossingPeakAmplitudes_operation_sequence .
 
@@ -5478,7 +5478,7 @@ afv:ZeroCrossingPeakAmplitudes_operation_sequence a afo:OperationSequence ;
 
 afv:ZeroCrossingRateModel a afo:Model ;
     rdfs:label "ZeroCrossingRate model"@en ;
-    rdfs:comment "Computational model for SpectralSmoothness" ;
+    rdfs:comment "Computational model for MPEG7AudioWaveform" ;
     vs:term_status "testing"@en ;
     afo:sequence afv:ZeroCrossingRate_operation_sequence .
 
