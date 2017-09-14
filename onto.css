@@ -1,0 +1,41 @@
+.sub{
+	padding-top: 0px;
+	margin-top: -8px;
+	font-size: 9px !important;
+}
+
+.section{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ff8c00;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.terms{
+	padding: 15px;
+	background-color: #000;
+	border: 1pt #444 solid;
+	margin: 10px;
+	margin-bottom: 30px;
+	padding-right: 60px;
+}
+
+.terms ul{
+	list-style-type: none;
+}
+
+.owlclass{
+	border-bottom: 1px #444 solid;
+	padding: 15 5 15 5;
+}
+
+.owlprop{
+	border-bottom: 1px #444 solid;
+	padding: 15 5 15 5;
+}
+
+table td{
+	text-align: left;
+	padding-left: 20px;
+}
