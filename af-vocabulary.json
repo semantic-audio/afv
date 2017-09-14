@@ -60,7 +60,7 @@
       "afo:sequence": {
         "@id": "afv:ModifiedGroupDelay_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "ModifiedGroupDelay model"
@@ -94,27 +94,39 @@
       }
     },
     {
-      "@id": "afv:SubbandSpectralFlux_operation_sequence",
-      "@type": "afo:OperationSequence",
-      "afo:first_operation": {
-        "@id": "afv:SubbandSpectralFlux_operation_1"
+      "@id": "afv:DistortionDiscriminantAnalysis",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:DistortionDiscriminantAnalysisModel"
+      },
+      "rdfs:comment": "DistortionDiscriminantAnalysis",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "DistortionDiscriminantAnalysis"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
       "@id": "afv:Key",
       "@type": "owl:Class",
       "rdfs:comment": [
-        "KeyDetector",
-        "Key"
+        "Key",
+        "KeyDetector"
       ],
       "rdfs:label": [
         {
           "@language": "en",
-          "@value": "KeyDetector"
+          "@value": "Key"
         },
         {
           "@language": "en",
-          "@value": "Key"
+          "@value": "KeyDetector"
         }
       ],
       "rdfs:subClassOf": {
@@ -147,7 +159,7 @@
       "afo:sequence": {
         "@id": "afv:MultiresolutionEntropy_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MultiresolutionEntropy model"
@@ -160,7 +172,7 @@
     {
       "@id": "",
       "@type": "owl:Ontology",
-      "http://purl.org/dc/elements/1.1/date": "2017-01-12T12:53:46.746306",
+      "http://purl.org/dc/elements/1.1/date": "2017-09-14T17:54:23.185425",
       "http://purl.org/dc/elements/1.1/description": {
         "@language": "en",
         "@value": "This is a vocuabulary of common terms used in the music information retrieval workflows. It relies on the Audio Feature Ontology for basic terminology: https://w3id.org/afo/onto/1.1#"
@@ -177,7 +189,7 @@
       "afo:sequence": {
         "@id": "afv:PerceptualLinearPrediction_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "PerceptualLinearPrediction model"
@@ -193,7 +205,7 @@
       "afo:sequence": {
         "@id": "afv:SubbandEnergyRatio_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SubbandEnergyRatio model"
@@ -217,6 +229,22 @@
       }
     },
     {
+      "@id": "afv:HarmonicSpectralFlux",
+      "@type": "owl:Class",
+      "rdfs:comment": "HarmonicSpectralFlux",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "HarmonicSpectralFlux"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
       "@id": "afv:SpectralRolloff_operation_sequence",
       "@type": "afo:OperationSequence",
       "afo:first_operation": {
@@ -229,10 +257,26 @@
       "afo:sequence": {
         "@id": "afv:Sharpness_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "Sharpness model"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:LogFrequencySpectrum",
+      "@type": "owl:Class",
+      "rdfs:comment": "LogFrequencySpectrum",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "LogFrequencySpectrum"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -502,8 +546,8 @@
     {
       "@id": "afv:ChromaCENSFeatures_operation_5",
       "@type": [
-        "afv:LowpassFilter",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:LowpassFilter"
       ],
       "rdfs:comment": "ChromaCENSFeatures computational sequence step 5",
       "rdfs:label": {
@@ -532,19 +576,10 @@
       }
     },
     {
-      "@id": "afv:BeatHistogram_operation_7",
-      "@type": [
-        "afo:LastOperation",
-        "afv:Histogram"
-      ],
-      "rdfs:comment": "BeatHistogram computational sequence step 7",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "BeatHistogram_operation_7"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
+      "@id": "afv:SubbandEnergyRatio_operation_sequence",
+      "@type": "afo:OperationSequence",
+      "afo:first_operation": {
+        "@id": "afv:SubbandEnergyRatio_operation_1"
       }
     },
     {
@@ -658,28 +693,12 @@
       }
     },
     {
-      "@id": "afv:ConstantQMFCC",
-      "@type": "owl:Class",
-      "rdfs:comment": "ConstantQMFCC",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "ConstantQMFCC"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:MPEG7AudioFundamentalFrequencyModel",
       "@type": "afo:Model",
       "afo:sequence": {
         "@id": "afv:MPEG7AudioFundamentalFrequency_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7AudioFundamentalFrequency model"
@@ -695,7 +714,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7AudioHarmonicity_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7AudioHarmonicity model"
@@ -722,18 +741,18 @@
       }
     },
     {
-      "@id": "afv:ModifiedGroupDelay_operation_3",
-      "@type": [
-        "afv:LowpassFilter",
-        "afo:OptionalOperation"
-      ],
-      "afo:next_operation": {
-        "@id": "afv:ModifiedGroupDelay_operation_4"
+      "@id": "afv:PitchProfile",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:PitchProfileModel"
       },
-      "rdfs:comment": "ModifiedGroupDelay computational sequence step 3",
+      "rdfs:comment": "PitchProfile",
       "rdfs:label": {
         "@language": "en",
-        "@value": "ModifiedGroupDelay_operation_3"
+        "@value": "PitchProfile"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -794,7 +813,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralFlatness_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralFlatness model"
@@ -907,7 +926,7 @@
       "afo:sequence": {
         "@id": "afv:PulseMetric_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "PulseMetric model"
@@ -984,7 +1003,7 @@
       "afo:sequence": {
         "@id": "afv:IntegralLoudness_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "IntegralLoudness model"
@@ -1055,6 +1074,22 @@
       "rdfs:label": {
         "@language": "en",
         "@value": "BeatHistogram"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:PerceptualSpread",
+      "@type": "owl:Class",
+      "rdfs:comment": "PerceptualSpread",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "PerceptualSpread"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -1145,15 +1180,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralVariation_operation_4",
-      "@type": [
-        "afv:CrossCorrelation",
-        "afo:LastOperation"
-      ],
-      "rdfs:comment": "MPEG7HarmonicSpectralVariation computational sequence step 4",
+      "@id": "afv:KullbackLieblerOnset",
+      "@type": "owl:Class",
+      "rdfs:comment": "KullbackLieblerOnsetDetectionFunction",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7HarmonicSpectralVariation_operation_4"
+        "@value": "KullbackLieblerOnsetDetectionFunction"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -1166,7 +1201,7 @@
       "afo:sequence": {
         "@id": "afv:PhaseSpaceFeatures_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "PhaseSpaceFeatures model"
@@ -1212,15 +1247,15 @@
       "@id": "afv:RootMeanSquare",
       "@type": "owl:Class",
       "rdfs:comment": [
-        "Subclass of Aggregation from the Audio Feature Ontology",
-        "RootMeanSquare"
+        "RootMeanSquare",
+        "Subclass of Aggregation from the Audio Feature Ontology"
       ],
       "rdfs:label": [
+        "Root Mean Square",
         {
           "@language": "en",
           "@value": "RootMeanSquare"
-        },
-        "Root Mean Square"
+        }
       ],
       "rdfs:subClassOf": [
         {
@@ -1230,6 +1265,25 @@
           "@id": "afo:Aggregation"
         }
       ],
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:ModifiedGroupDelay_operation_3",
+      "@type": [
+        "afv:LowpassFilter",
+        "afo:OptionalOperation"
+      ],
+      "afo:next_operation": {
+        "@id": "afv:ModifiedGroupDelay_operation_4"
+      },
+      "rdfs:comment": "ModifiedGroupDelay computational sequence step 3",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ModifiedGroupDelay_operation_3"
+      },
       "vs:term_status": {
         "@language": "en",
         "@value": "testing"
@@ -1313,8 +1367,8 @@
     {
       "@id": "afv:MelscaleFrequencyCepstralCoefficients_operation_5",
       "@type": [
-        "afv:DiscreteCosineTransform",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:DiscreteCosineTransform"
       ],
       "rdfs:comment": "MelscaleFrequencyCepstralCoefficients computational sequence step 5",
       "rdfs:label": {
@@ -1359,12 +1413,12 @@
       }
     },
     {
-      "@id": "afv:HarmonicTristimulus",
+      "@id": "afv:RhythmHistogram",
       "@type": "owl:Class",
-      "rdfs:comment": "HarmonicTristimulus",
+      "rdfs:comment": "RhythmHistogram",
       "rdfs:label": {
         "@language": "en",
-        "@value": "HarmonicTristimulus"
+        "@value": "RhythmHistogram"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -1426,15 +1480,15 @@
       }
     },
     {
-      "@id": "afv:Bandwidth_operation_5",
-      "@type": [
-        "afv:Deviation",
-        "afo:LastOperation"
-      ],
-      "rdfs:comment": "Bandwidth computational sequence step 5",
+      "@id": "afv:EventDensity",
+      "@type": "owl:Class",
+      "rdfs:comment": "EventDensity",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Bandwidth_operation_5"
+        "@value": "EventDensity"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -1479,7 +1533,7 @@
       "afo:sequence": {
         "@id": "afv:DistortionDiscriminantAnalysis_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "DistortionDiscriminantAnalysis model"
@@ -1534,7 +1588,7 @@
       "afo:sequence": {
         "@id": "afv:BeatSpectrum_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "BeatSpectrum model"
@@ -1608,7 +1662,7 @@
       "afo:sequence": {
         "@id": "afv:CyclicBeatSpectrum_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "CyclicBeatSpectrum model"
@@ -1624,7 +1678,7 @@
       "afo:sequence": {
         "@id": "afv:JointAcousticandModuluationFrequency_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "JointAcousticandModuluationFrequency model"
@@ -1704,8 +1758,8 @@
     {
       "@id": "afv:MPEG7AudioFundamentalFrequency_operation_3",
       "@type": [
-        "afo:LastOperation",
-        "afv:Maximum"
+        "afv:Maximum",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "MPEG7AudioFundamentalFrequency computational sequence step 3",
       "rdfs:label": {
@@ -1734,12 +1788,12 @@
       }
     },
     {
-      "@id": "afv:HarmonicSpectralFlux",
+      "@id": "afv:IBTINESCBeat",
       "@type": "owl:Class",
-      "rdfs:comment": "HarmonicSpectralFlux",
+      "rdfs:comment": "IBTINESCBeatTracker",
       "rdfs:label": {
         "@language": "en",
-        "@value": "HarmonicSpectralFlux"
+        "@value": "IBTINESCBeatTracker"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -1798,15 +1852,28 @@
       }
     },
     {
-      "@id": "afv:AttackLeap",
-      "@type": "owl:Class",
-      "rdfs:comment": "AttackLeap",
+      "@id": "afv:MPEG7HarmonicSpectralDeviationModel",
+      "@type": "afo:Model",
+      "afo:sequence": {
+        "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_sequence"
+      },
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
-        "@value": "AttackLeap"
+        "@value": "MPEG7HarmonicSpectralDeviation model"
       },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:PrincipalComponentAnalysis",
+      "@type": "owl:Class",
+      "rdfs:comment": "Subclass of Transformation from the Audio Feature Ontology",
+      "rdfs:label": "Principal Component Analysis",
       "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@id": "afo:Transformation"
       },
       "vs:term_status": {
         "@language": "en",
@@ -1985,26 +2052,10 @@
       "afo:sequence": {
         "@id": "afv:PitchSynchronousZCPA_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "PitchSynchronousZCPA model"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:EffectiveDuration",
-      "@type": "owl:Class",
-      "rdfs:comment": "EffectiveDuration",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "EffectiveDuration"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -2017,7 +2068,7 @@
       "afo:sequence": {
         "@id": "afv:Sone_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "Sone model"
@@ -2274,7 +2325,7 @@
       "afo:sequence": {
         "@id": "afv:RhythmPatterns_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "RhythmPatterns model"
@@ -2320,31 +2371,12 @@
       }
     },
     {
-      "@id": "afv:MagnitudeSpectrum",
+      "@id": "afv:Autoregression",
       "@type": "owl:Class",
-      "rdfs:comment": "MagnitudeSpectrum",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "MagnitudeSpectrum"
-      },
+      "rdfs:comment": "Subclass of Filter from the Audio Feature Ontology",
+      "rdfs:label": "Autoregression",
       "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:RhythmPatterns_operation_7",
-      "@type": "afv:DiscreteFourierTransform",
-      "afo:next_operation": {
-        "@id": "afv:RhythmPatterns_operation_8"
-      },
-      "rdfs:comment": "RhythmPatterns computational sequence step 7",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "RhythmPatterns_operation_7"
+        "@id": "afo:Filter"
       },
       "vs:term_status": {
         "@language": "en",
@@ -2354,8 +2386,8 @@
     {
       "@id": "afv:RelativeSpectralPLP_operation_11",
       "@type": [
-        "afv:CepstralRecursionFormula",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:CepstralRecursionFormula"
       ],
       "rdfs:comment": "RelativeSpectralPLP computational sequence step 11",
       "rdfs:label": {
@@ -2398,11 +2430,11 @@
         "Sum"
       ],
       "rdfs:label": [
-        "Sum",
         {
           "@language": "en",
           "@value": "Sum"
-        }
+        },
+        "Sum"
       ],
       "rdfs:subClassOf": [
         {
@@ -2460,22 +2492,6 @@
       }
     },
     {
-      "@id": "afv:AutoCorrelationFFT",
-      "@type": "owl:Class",
-      "rdfs:comment": "AutoCorrelationFFT",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "AutoCorrelationFFT"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:ModulationFrequencyVariance",
       "@type": "owl:Class",
       "rdfs:comment": "ModulationFrequencyVarianceDescriptor",
@@ -2508,15 +2524,12 @@
       }
     },
     {
-      "@id": "afv:MPEG7SpectralCentroid",
+      "@id": "afv:TonicPitch",
       "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:MPEG7SpectralCentroidModel"
-      },
-      "rdfs:comment": "MPEG7SpectralCentroid",
+      "rdfs:comment": "TonicPitch",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7SpectralCentroid"
+        "@value": "TonicPitch"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -2594,31 +2607,15 @@
       }
     },
     {
-      "@id": "afv:IBTINESCBeat",
+      "@id": "afv:RMSEnergy",
       "@type": "owl:Class",
-      "rdfs:comment": "IBTINESCBeatTracker",
+      "rdfs:comment": "RMSEnergy",
       "rdfs:label": {
         "@language": "en",
-        "@value": "IBTINESCBeatTracker"
+        "@value": "RMSEnergy"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:Volume_operation_2",
-      "@type": [
-        "afo:LastOperation",
-        "afv:RootMeanSquare"
-      ],
-      "rdfs:comment": "Volume computational sequence step 2",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Volume_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -3036,15 +3033,15 @@
       }
     },
     {
-      "@id": "afv:IntegralLoudness_operation_6",
-      "@type": "afv:ExponentialFunction",
-      "afo:next_operation": {
-        "@id": "afv:IntegralLoudness_operation_7"
-      },
-      "rdfs:comment": "IntegralLoudness computational sequence step 6",
+      "@id": "afv:AdaptiveSpectrogram",
+      "@type": "owl:Class",
+      "rdfs:comment": "AdaptiveSpectrogram",
       "rdfs:label": {
         "@language": "en",
-        "@value": "IntegralLoudness_operation_6"
+        "@value": "AdaptiveSpectrogram"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -3052,15 +3049,15 @@
       }
     },
     {
-      "@id": "afv:Envelope",
-      "@type": "owl:Class",
-      "rdfs:comment": "Envelope",
+      "@id": "afv:SpectralPeakStructure_operation_1",
+      "@type": "afv:Windowing",
+      "afo:next_operation": {
+        "@id": "afv:SpectralPeakStructure_operation_2"
+      },
+      "rdfs:comment": "SpectralPeakStructure computational sequence step 1",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Envelope"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "SpectralPeakStructure_operation_1"
       },
       "vs:term_status": {
         "@language": "en",
@@ -3086,7 +3083,7 @@
       "afo:sequence": {
         "@id": "afv:LinearPredictionCepstralCoefficients_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "LinearPredictionCepstralCoefficients model"
@@ -3145,22 +3142,6 @@
       }
     },
     {
-      "@id": "afv:AbsMax",
-      "@type": "owl:Class",
-      "rdfs:comment": "AbsMax",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "AbsMax"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:SpectralPatternCent",
       "@type": "owl:Class",
       "rdfs:comment": "SpectralPatternCent",
@@ -3193,15 +3174,18 @@
       }
     },
     {
-      "@id": "afv:PulseMetric_operation_2",
-      "@type": "afv:BandpassFilter",
-      "afo:next_operation": {
-        "@id": "afv:PulseMetric_operation_3"
+      "@id": "afv:PsychoacousticalPitch",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:PsychoacousticalPitchModel"
       },
-      "rdfs:comment": "PulseMetric computational sequence step 2",
+      "rdfs:comment": "PsychoacousticalPitch",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PulseMetric_operation_2"
+        "@value": "PsychoacousticalPitch"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -3295,8 +3279,8 @@
     {
       "@id": "afv:PsychoacousticalPitch_operation_5",
       "@type": [
-        "afo:LastOperation",
-        "afv:Sum"
+        "afv:Sum",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "PsychoacousticalPitch computational sequence step 5",
       "rdfs:label": {
@@ -3411,12 +3395,31 @@
       }
     },
     {
-      "@id": "afv:IndependentComponentAnalysis",
+      "@id": "afv:MagnitudeSpectrum",
       "@type": "owl:Class",
-      "rdfs:comment": "Subclass of Transformation from the Audio Feature Ontology",
-      "rdfs:label": "Independent Component Analysis",
+      "rdfs:comment": "MagnitudeSpectrum",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "MagnitudeSpectrum"
+      },
       "rdfs:subClassOf": {
-        "@id": "afo:Transformation"
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:SpectralRolloff_operation_3",
+      "@type": [
+        "afo:LastOperation",
+        "afv:Percentile"
+      ],
+      "rdfs:comment": "SpectralRolloff computational sequence step 3",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "SpectralRolloff_operation_3"
       },
       "vs:term_status": {
         "@language": "en",
@@ -3552,6 +3555,22 @@
       }
     },
     {
+      "@id": "afv:MaxMin",
+      "@type": "owl:Class",
+      "rdfs:comment": "MaxMin",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "MaxMin"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
       "@id": "afv:ShortTimeEnergy_operation_1",
       "@type": "afv:Windowing",
       "afo:next_operation": {
@@ -3573,7 +3592,7 @@
       "afo:sequence": {
         "@id": "afv:ModulationHarmonicCoefficients_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "ModulationHarmonicCoefficients model"
@@ -3591,12 +3610,31 @@
       }
     },
     {
-      "@id": "afv:PitchFFTYIN",
+      "@id": "afv:Envelope",
       "@type": "owl:Class",
-      "rdfs:comment": "PitchFFTYIN",
+      "rdfs:comment": "Envelope",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PitchFFTYIN"
+        "@value": "Envelope"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:ModulationHarmonicCoefficients",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:ModulationHarmonicCoefficientsModel"
+      },
+      "rdfs:comment": "4HzModulationHarmonicCoefficients",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "4HzModulationHarmonicCoefficients"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -3722,8 +3760,8 @@
     {
       "@id": "afv:BarkscaleFrequencyCepstralCoefficients_operation_5",
       "@type": [
-        "afo:LastOperation",
-        "afv:DiscreteCosineTransform"
+        "afv:DiscreteCosineTransform",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "BarkscaleFrequencyCepstralCoefficients computational sequence step 5",
       "rdfs:label": {
@@ -3738,8 +3776,8 @@
     {
       "@id": "afv:SpectralDispersion_operation_5",
       "@type": [
-        "afo:LastOperation",
-        "afv:Deviation"
+        "afv:Deviation",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "SpectralDispersion computational sequence step 5",
       "rdfs:label": {
@@ -3795,6 +3833,33 @@
       "@type": "afo:OperationSequence",
       "afo:first_operation": {
         "@id": "afv:MPEG7SpectralCentroid_operation_1"
+      }
+    },
+    {
+      "@id": "afv:Deviation",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        "Deviation",
+        "Subclass of Aggregation from the Audio Feature Ontology"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Deviation"
+        },
+        "Deviation"
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "afo:Aggregation"
+        },
+        {
+          "@id": "afo:AudioFeature"
+        }
+      ],
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -3975,12 +4040,12 @@
       }
     },
     {
-      "@id": "afv:MaxMin",
+      "@id": "afv:SpectralFlatnessAllBands",
       "@type": "owl:Class",
-      "rdfs:comment": "MaxMin",
+      "rdfs:comment": "SpectralFlatnessAllBands",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MaxMin"
+        "@value": "SpectralFlatnessAllBands"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -4057,8 +4122,8 @@
     {
       "@id": "afv:AdaptiveTimeFrequencyTransform_operation_2",
       "@type": [
-        "afv:Histogram",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:Histogram"
       ],
       "rdfs:comment": "AdaptiveTimeFrequencyTransform computational sequence step 2",
       "rdfs:label": {
@@ -4078,12 +4143,12 @@
       }
     },
     {
-      "@id": "afv:LogFrequencySpectrum",
+      "@id": "afv:ConstantQMFCC",
       "@type": "owl:Class",
-      "rdfs:comment": "LogFrequencySpectrum",
+      "rdfs:comment": "ConstantQMFCC",
       "rdfs:label": {
         "@language": "en",
-        "@value": "LogFrequencySpectrum"
+        "@value": "ConstantQMFCC"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -4235,7 +4300,7 @@
       "afo:sequence": {
         "@id": "afv:LineSpectralFrequencies_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "LineSpectralFrequencies model"
@@ -4265,15 +4330,15 @@
       }
     },
     {
-      "@id": "afv:SpectralSlope_operation_3",
-      "@type": [
-        "afo:LastOperation",
-        "afv:Regression"
-      ],
-      "rdfs:comment": "SpectralSlope computational sequence step 3",
+      "@id": "afv:HarmonicSpectralRolloff",
+      "@type": "owl:Class",
+      "rdfs:comment": "HarmonicSpectralRolloff",
       "rdfs:label": {
         "@language": "en",
-        "@value": "SpectralSlope_operation_3"
+        "@value": "HarmonicSpectralRolloff"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -4281,10 +4346,19 @@
       }
     },
     {
-      "@id": "afv:SubbandEnergyRatio_operation_sequence",
-      "@type": "afo:OperationSequence",
-      "afo:first_operation": {
-        "@id": "afv:SubbandEnergyRatio_operation_1"
+      "@id": "afv:BeatHistogram_operation_7",
+      "@type": [
+        "afv:Histogram",
+        "afo:LastOperation"
+      ],
+      "rdfs:comment": "BeatHistogram computational sequence step 7",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "BeatHistogram_operation_7"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -4306,7 +4380,7 @@
       "afo:sequence": {
         "@id": "afv:AutocorrelationMFCCs_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "AutocorrelationMFCCs model"
@@ -4333,15 +4407,15 @@
       }
     },
     {
-      "@id": "afv:NonSilentRegions",
-      "@type": "owl:Class",
-      "rdfs:comment": "NonSilentRegions",
+      "@id": "afv:HarmonicEnergyEntropyModel",
+      "@type": "afo:Model",
+      "afo:sequence": {
+        "@id": "afv:HarmonicEnergyEntropy_operation_sequence"
+      },
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
-        "@value": "NonSilentRegions"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "HarmonicEnergyEntropy model"
       },
       "vs:term_status": {
         "@language": "en",
@@ -4354,7 +4428,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7HarmonicSpectralCentroid_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7HarmonicSpectralCentroid model"
@@ -4397,19 +4471,10 @@
       }
     },
     {
-      "@id": "afv:Cepstrum",
-      "@type": "owl:Class",
-      "rdfs:comment": "Cepstrum",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Cepstrum"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
+      "@id": "afv:MPEG7HarmonicSpectralVariation_operation_sequence",
+      "@type": "afo:OperationSequence",
+      "afo:first_operation": {
+        "@id": "afv:MPEG7HarmonicSpectralVariation_operation_1"
       }
     },
     {
@@ -4429,18 +4494,15 @@
       }
     },
     {
-      "@id": "afv:PsychoacousticalPitch",
-      "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:PsychoacousticalPitchModel"
+      "@id": "afv:PulseMetric_operation_2",
+      "@type": "afv:BandpassFilter",
+      "afo:next_operation": {
+        "@id": "afv:PulseMetric_operation_3"
       },
-      "rdfs:comment": "PsychoacousticalPitch",
+      "rdfs:comment": "PulseMetric computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PsychoacousticalPitch"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "PulseMetric_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -4488,7 +4550,7 @@
       "afo:sequence": {
         "@id": "afv:ChromaCENSFeatures_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "ChromaCENSFeatures model"
@@ -4666,10 +4728,45 @@
       }
     },
     {
+      "@id": "afv:MPEG7SpectralCentroid",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:MPEG7SpectralCentroidModel"
+      },
+      "rdfs:comment": "MPEG7SpectralCentroid",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "MPEG7SpectralCentroid"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
       "@id": "afv:MPEG7HarmonicSpectralSpread_operation_sequence",
       "@type": "afo:OperationSequence",
       "afo:first_operation": {
         "@id": "afv:MPEG7HarmonicSpectralSpread_operation_1"
+      }
+    },
+    {
+      "@id": "afv:MelscaleFrequencyCepstralCoefficients_operation_1",
+      "@type": "afv:Windowing",
+      "afo:next_operation": {
+        "@id": "afv:MelscaleFrequencyCepstralCoefficients_operation_2"
+      },
+      "rdfs:comment": "MelscaleFrequencyCepstralCoefficients computational sequence step 1",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "MelscaleFrequencyCepstralCoefficients_operation_1"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -4824,11 +4921,11 @@
         "DiscreteCosineTransform"
       ],
       "rdfs:label": [
-        "Discrete Cosine Transform",
         {
           "@language": "en",
           "@value": "DiscreteCosineTransform"
-        }
+        },
+        "Discrete Cosine Transform"
       ],
       "rdfs:subClassOf": [
         {
@@ -4849,7 +4946,7 @@
       "afo:sequence": {
         "@id": "afv:ZeroCrossingRate_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "ZeroCrossingRate model"
@@ -4898,10 +4995,26 @@
       "afo:sequence": {
         "@id": "afv:Volume_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "Volume model"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:ModulationEnergyModel",
+      "@type": "afo:Model",
+      "afo:sequence": {
+        "@id": "afv:ModulationEnergy_operation_sequence"
+      },
+      "rdfs:comment": "Computational model for SpectralSmoothness",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ModulationEnergy model"
       },
       "vs:term_status": {
         "@language": "en",
@@ -5030,8 +5143,8 @@
     {
       "@id": "afv:Inharmonicity_operation_4",
       "@type": [
-        "afo:LastOperation",
-        "afv:Deviation"
+        "afv:Deviation",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "Inharmonicity computational sequence step 4",
       "rdfs:label": {
@@ -5049,7 +5162,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralSlope_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralSlope model"
@@ -5220,7 +5333,7 @@
       "afo:sequence": {
         "@id": "afv:BeatHistogram_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "BeatHistogram model"
@@ -5311,9 +5424,9 @@
     {
       "@id": "afv:PitchHistogram_operation_5",
       "@type": [
-        "afv:Sum",
         "afo:OptionalOperation",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:Sum"
       ],
       "rdfs:comment": "PitchHistogram computational sequence step 5",
       "rdfs:label": {
@@ -5480,6 +5593,22 @@
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralCrest_operation_6"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:Sharpness_operation_6",
+      "@type": [
+        "afo:LastOperation",
+        "afv:Mean"
+      ],
+      "rdfs:comment": "Sharpness computational sequence step 6",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Sharpness_operation_6"
       },
       "vs:term_status": {
         "@language": "en",
@@ -5863,6 +5992,25 @@
       }
     },
     {
+      "@id": "afv:PitchSynchronousZCPA",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:PitchSynchronousZCPAModel"
+      },
+      "rdfs:comment": "PitchSynchronousZCPA",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "PitchSynchronousZCPA"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
       "@id": "afv:StatisticalIntegrator",
       "@type": "owl:Class",
       "rdfs:comment": "StatisticalIntegrator",
@@ -5927,15 +6075,24 @@
       }
     },
     {
-      "@id": "afv:SpectralFlatness_operation_2",
-      "@type": "afv:DiscreteFourierTransform",
-      "afo:next_operation": {
-        "@id": "afv:SpectralFlatness_operation_3"
-      },
-      "rdfs:comment": "SpectralFlatness computational sequence step 2",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "SpectralFlatness_operation_2"
+      "@id": "afv:TonalChange",
+      "@type": "owl:Class",
+      "rdfs:comment": [
+        "TonalChangeDetectionFunction",
+        "TonalChange"
+      ],
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "TonalChange"
+        },
+        {
+          "@language": "en",
+          "@value": "TonalChangeDetectionFunction"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -5959,34 +6116,15 @@
       }
     },
     {
-      "@id": "afv:PitchProfile",
-      "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:PitchProfileModel"
+      "@id": "afv:SpectralFlatness_operation_1",
+      "@type": "afv:Windowing",
+      "afo:next_operation": {
+        "@id": "afv:SpectralFlatness_operation_2"
       },
-      "rdfs:comment": "PitchProfile",
+      "rdfs:comment": "SpectralFlatness computational sequence step 1",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PitchProfile"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:OctaveBasedSpectralContrast",
-      "@type": "owl:Class",
-      "rdfs:comment": "OctaveBasedSpectralContrast",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "OctaveBasedSpectralContrast"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "SpectralFlatness_operation_1"
       },
       "vs:term_status": {
         "@language": "en",
@@ -6012,8 +6150,8 @@
     {
       "@id": "afv:SpectralFlatness_operation_5",
       "@type": [
-        "afv:Logarithm",
         "afo:OptionalOperation",
+        "afv:Logarithm",
         "afo:LastOperation"
       ],
       "rdfs:comment": "SpectralFlatness computational sequence step 5",
@@ -6043,15 +6181,15 @@
       }
     },
     {
-      "@id": "afv:DeltaDeltaMFCC",
-      "@type": "owl:Class",
-      "rdfs:comment": "DeltaDeltaMFCC",
+      "@id": "afv:Sone_operation_2",
+      "@type": "afv:DiscreteFourierTransform",
+      "afo:next_operation": {
+        "@id": "afv:Sone_operation_3"
+      },
+      "rdfs:comment": "Sone computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "DeltaDeltaMFCC"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "Sone_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -6077,8 +6215,8 @@
     {
       "@id": "afv:Sone_operation_6",
       "@type": [
-        "afo:LastOperation",
-        "afv:WeightingFunction"
+        "afv:WeightingFunction",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "Sone computational sequence step 6",
       "rdfs:label": {
@@ -6141,7 +6279,7 @@
       "afo:sequence": {
         "@id": "afv:Pitch_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "Pitch model"
@@ -6168,19 +6306,10 @@
       }
     },
     {
-      "@id": "afv:ZeroCrossingRate_operation_2",
-      "@type": [
-        "afo:LastOperation",
-        "afv:LevelCrossingDetector"
-      ],
-      "rdfs:comment": "ZeroCrossingRate computational sequence step 2",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "ZeroCrossingRate_operation_2"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
+      "@id": "afv:NoiseRobustAuditoryFeature_operation_sequence",
+      "@type": "afo:OperationSequence",
+      "afo:first_operation": {
+        "@id": "afv:NoiseRobustAuditoryFeature_operation_1"
       }
     },
     {
@@ -6189,7 +6318,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7TemporalCentroid_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7TemporalCentroid model"
@@ -6283,34 +6412,12 @@
       }
     },
     {
-      "@id": "afv:LinearPredictionCepstralCoefficients_operation_2",
-      "@type": [
-        "afv:BandpassFilter",
-        "afo:OptionalOperation"
-      ],
-      "afo:next_operation": {
-        "@id": "afv:LinearPredictionCepstralCoefficients_operation_3"
-      },
-      "rdfs:comment": "LinearPredictionCepstralCoefficients computational sequence step 2",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "LinearPredictionCepstralCoefficients_operation_2"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:ZeroCrossingRate",
+      "@id": "afv:AverageSquaredDifference",
       "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:ZeroCrossingRateModel"
-      },
-      "rdfs:comment": "ZeroCrossingRate",
+      "rdfs:comment": "AverageSquaredDifferenceFunction",
       "rdfs:label": {
         "@language": "en",
-        "@value": "ZeroCrossingRate"
+        "@value": "AverageSquaredDifferenceFunction"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -6321,12 +6428,19 @@
       }
     },
     {
+      "@id": "afv:AdaptiveTimeFrequencyTransform_operation_sequence",
+      "@type": "afo:OperationSequence",
+      "afo:first_operation": {
+        "@id": "afv:AdaptiveTimeFrequencyTransform_operation_1"
+      }
+    },
+    {
       "@id": "afv:AmplitudeDescriptorModel",
       "@type": "afo:Model",
       "afo:sequence": {
         "@id": "afv:AmplitudeDescriptor_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "AmplitudeDescriptor model"
@@ -6337,15 +6451,15 @@
       }
     },
     {
-      "@id": "afv:LinearPredictionCepstralCoefficients_operation_1",
-      "@type": "afv:Windowing",
-      "afo:next_operation": {
-        "@id": "afv:LinearPredictionCepstralCoefficients_operation_2"
-      },
-      "rdfs:comment": "LinearPredictionCepstralCoefficients computational sequence step 1",
+      "@id": "afv:Decaytime",
+      "@type": "owl:Class",
+      "rdfs:comment": "Decaytime",
       "rdfs:label": {
         "@language": "en",
-        "@value": "LinearPredictionCepstralCoefficients_operation_1"
+        "@value": "Decaytime"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -6371,8 +6485,8 @@
     {
       "@id": "afv:LinearPredictionCepstralCoefficients_operation_4",
       "@type": [
-        "afv:CepstralRecursionFormula",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:CepstralRecursionFormula"
       ],
       "rdfs:comment": "LinearPredictionCepstralCoefficients computational sequence step 4",
       "rdfs:label": {
@@ -6514,15 +6628,12 @@
       }
     },
     {
-      "@id": "afv:AuditoryFilterBankTemporalEnvelopes",
+      "@id": "afv:TransientSteadyStateSeparation",
       "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:AuditoryFilterBankTemporalEnvelopesModel"
-      },
-      "rdfs:comment": "AuditoryFilterBankTemporalEnvelopes",
+      "rdfs:comment": "TransientSteadyStateSeparation",
       "rdfs:label": {
         "@language": "en",
-        "@value": "AuditoryFilterBankTemporalEnvelopes"
+        "@value": "TransientSteadyStateSeparation"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -6539,22 +6650,6 @@
       "rdfs:label": {
         "@language": "en",
         "@value": "AmplitudeDescriptor"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:ADRessStereoSpectrum",
-      "@type": "owl:Class",
-      "rdfs:comment": "ADRessStereoSpectrum (Azimuth Discrimination and Resynthesis)",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "ADRessStereoSpectrum (Azimuth Discrimination and Resynthesis)"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -6634,7 +6729,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7AudioSpectrumCentroid_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7AudioSpectrumCentroid model"
@@ -6663,6 +6758,22 @@
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_6",
+      "@type": [
+        "afv:Deviation",
+        "afo:LastOperation"
+      ],
+      "rdfs:comment": "MPEG7HarmonicSpectralDeviation computational sequence step 6",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "MPEG7HarmonicSpectralDeviation_operation_6"
       },
       "vs:term_status": {
         "@language": "en",
@@ -6716,24 +6827,15 @@
       }
     },
     {
-      "@id": "afv:TonalChange",
-      "@type": "owl:Class",
-      "rdfs:comment": [
-        "TonalChange",
-        "TonalChangeDetectionFunction"
-      ],
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "TonalChange"
-        },
-        {
-          "@language": "en",
-          "@value": "TonalChangeDetectionFunction"
-        }
-      ],
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+      "@id": "afv:SpectralFlatness_operation_2",
+      "@type": "afv:DiscreteFourierTransform",
+      "afo:next_operation": {
+        "@id": "afv:SpectralFlatness_operation_3"
+      },
+      "rdfs:comment": "SpectralFlatness computational sequence step 2",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "SpectralFlatness_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -6842,7 +6944,7 @@
       "afo:sequence": {
         "@id": "afv:PsychoacousticalPitch_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "PsychoacousticalPitch model"
@@ -6853,15 +6955,15 @@
       }
     },
     {
-      "@id": "afv:SpectralFlatness_operation_1",
-      "@type": "afv:Windowing",
-      "afo:next_operation": {
-        "@id": "afv:SpectralFlatness_operation_2"
-      },
-      "rdfs:comment": "SpectralFlatness computational sequence step 1",
+      "@id": "afv:OctaveBasedSpectralContrast",
+      "@type": "owl:Class",
+      "rdfs:comment": "OctaveBasedSpectralContrast",
       "rdfs:label": {
         "@language": "en",
-        "@value": "SpectralFlatness_operation_1"
+        "@value": "OctaveBasedSpectralContrast"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -6933,15 +7035,15 @@
       }
     },
     {
-      "@id": "afv:Sharpness_operation_6",
-      "@type": [
-        "afv:Mean",
-        "afo:LastOperation"
-      ],
-      "rdfs:comment": "Sharpness computational sequence step 6",
+      "@id": "afv:RhythmPatterns_operation_7",
+      "@type": "afv:DiscreteFourierTransform",
+      "afo:next_operation": {
+        "@id": "afv:RhythmPatterns_operation_8"
+      },
+      "rdfs:comment": "RhythmPatterns computational sequence step 7",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Sharpness_operation_6"
+        "@value": "RhythmPatterns_operation_7"
       },
       "vs:term_status": {
         "@language": "en",
@@ -6965,15 +7067,15 @@
       }
     },
     {
-      "@id": "afv:RhythmPatterns_operation_1",
-      "@type": "afv:Windowing",
-      "afo:next_operation": {
-        "@id": "afv:RhythmPatterns_operation_2"
-      },
-      "rdfs:comment": "RhythmPatterns computational sequence step 1",
+      "@id": "afv:RMSEnergyEnvelope",
+      "@type": "owl:Class",
+      "rdfs:comment": "RMSEnergyEnvelope",
       "rdfs:label": {
         "@language": "en",
-        "@value": "RhythmPatterns_operation_1"
+        "@value": "RMSEnergyEnvelope"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -7002,7 +7104,7 @@
       "afo:sequence": {
         "@id": "afv:Chromagram_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "Chromagram model"
@@ -7013,15 +7115,15 @@
       }
     },
     {
-      "@id": "afv:Sharpness_operation_3",
-      "@type": "afv:Spectralbinning",
+      "@id": "afv:RhythmPatterns_operation_2",
+      "@type": "afv:DiscreteFourierTransform",
       "afo:next_operation": {
-        "@id": "afv:Sharpness_operation_4"
+        "@id": "afv:RhythmPatterns_operation_3"
       },
-      "rdfs:comment": "Sharpness computational sequence step 3",
+      "rdfs:comment": "RhythmPatterns computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Sharpness_operation_3"
+        "@value": "RhythmPatterns_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -7066,7 +7168,7 @@
       "afo:sequence": {
         "@id": "afv:HarmonicCoefficient_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "HarmonicCoefficient model"
@@ -7079,8 +7181,8 @@
     {
       "@id": "afv:JointAcousticandModuluationFrequency_operation_6",
       "@type": [
-        "afo:LastOperation",
-        "afv:Sum"
+        "afv:Sum",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "JointAcousticandModuluationFrequency computational sequence step 6",
       "rdfs:label": {
@@ -7117,7 +7219,7 @@
       "afo:sequence": {
         "@id": "afv:LinearPredictionZCR_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "LinearPredictionZCR model"
@@ -7162,8 +7264,8 @@
     {
       "@id": "afv:RhythmPatterns_operation_10",
       "@type": [
-        "afo:LastOperation",
-        "afv:Median"
+        "afv:Median",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "RhythmPatterns computational sequence step 10",
       "rdfs:label": {
@@ -7206,15 +7308,12 @@
       }
     },
     {
-      "@id": "afv:ModulationHarmonicCoefficients",
+      "@id": "afv:PitchFFTYIN",
       "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:ModulationHarmonicCoefficientsModel"
-      },
-      "rdfs:comment": "4HzModulationHarmonicCoefficients",
+      "rdfs:comment": "PitchFFTYIN",
       "rdfs:label": {
         "@language": "en",
-        "@value": "4HzModulationHarmonicCoefficients"
+        "@value": "PitchFFTYIN"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -7260,15 +7359,15 @@
       }
     },
     {
-      "@id": "afv:Sone_operation_2",
-      "@type": "afv:DiscreteFourierTransform",
-      "afo:next_operation": {
-        "@id": "afv:Sone_operation_3"
-      },
-      "rdfs:comment": "Sone computational sequence step 2",
+      "@id": "afv:AbsMax",
+      "@type": "owl:Class",
+      "rdfs:comment": "AbsMax",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Sone_operation_2"
+        "@value": "AbsMax"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -7543,7 +7642,7 @@
       "afo:sequence": {
         "@id": "afv:NoiseRobustAuditoryFeature_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "NoiseRobustAuditoryFeature model"
@@ -7570,22 +7669,10 @@
       }
     },
     {
-      "@id": "afv:DistortionDiscriminantAnalysis",
-      "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:DistortionDiscriminantAnalysisModel"
-      },
-      "rdfs:comment": "DistortionDiscriminantAnalysis",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "DistortionDiscriminantAnalysis"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
+      "@id": "afv:SubbandSpectralFlux_operation_sequence",
+      "@type": "afo:OperationSequence",
+      "afo:first_operation": {
+        "@id": "afv:SubbandSpectralFlux_operation_1"
       }
     },
     {
@@ -7636,7 +7723,7 @@
       "afo:sequence": {
         "@id": "afv:HarmonicProminence_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "HarmonicProminence model"
@@ -7647,15 +7734,15 @@
       }
     },
     {
-      "@id": "afv:NoiseRobustAuditoryFeature_operation_2",
-      "@type": "afv:BandpassFilterBank",
+      "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_2",
+      "@type": "afv:DiscreteFourierTransform",
       "afo:next_operation": {
-        "@id": "afv:NoiseRobustAuditoryFeature_operation_3"
+        "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_3"
       },
-      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 2",
+      "rdfs:comment": "MPEG7HarmonicSpectralDeviation computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "NoiseRobustAuditoryFeature_operation_2"
+        "@value": "MPEG7HarmonicSpectralDeviation_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -7670,15 +7757,15 @@
       }
     },
     {
-      "@id": "afv:NoiseRobustAuditoryFeature_operation_3",
-      "@type": "afv:WeightingFunction",
-      "afo:next_operation": {
-        "@id": "afv:NoiseRobustAuditoryFeature_operation_4"
-      },
-      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 3",
+      "@id": "afv:PolyphonicTranscription",
+      "@type": "owl:Class",
+      "rdfs:comment": "PolyphonicTranscription",
       "rdfs:label": {
         "@language": "en",
-        "@value": "NoiseRobustAuditoryFeature_operation_3"
+        "@value": "PolyphonicTranscription"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -7702,15 +7789,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_5",
-      "@type": "afv:Logarithm",
+      "@id": "afv:NoiseRobustAuditoryFeature_operation_5",
+      "@type": "afv:LowpassFilter",
       "afo:next_operation": {
-        "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_6"
+        "@id": "afv:NoiseRobustAuditoryFeature_operation_6"
       },
-      "rdfs:comment": "MPEG7HarmonicSpectralDeviation computational sequence step 5",
+      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 5",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7HarmonicSpectralDeviation_operation_5"
+        "@value": "NoiseRobustAuditoryFeature_operation_5"
       },
       "vs:term_status": {
         "@language": "en",
@@ -7720,8 +7807,8 @@
     {
       "@id": "afv:MPEG7LogAttackTime_operation_4",
       "@type": [
-        "afv:Logarithm",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:Logarithm"
       ],
       "rdfs:comment": "MPEG7LogAttackTime computational sequence step 4",
       "rdfs:label": {
@@ -7791,22 +7878,6 @@
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:NoiseRobustAuditoryFeature_operation_6",
-      "@type": "afv:Logarithm",
-      "afo:next_operation": {
-        "@id": "afv:NoiseRobustAuditoryFeature_operation_7"
-      },
-      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 6",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "NoiseRobustAuditoryFeature_operation_6"
       },
       "vs:term_status": {
         "@language": "en",
@@ -7932,8 +8003,8 @@
     {
       "@id": "afv:Chromagram_operation_4",
       "@type": [
-        "afv:Sum",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:Sum"
       ],
       "rdfs:comment": "Chromagram computational sequence step 4",
       "rdfs:label": {
@@ -7951,7 +8022,7 @@
       "afo:sequence": {
         "@id": "afv:RelativeSpectralPLP_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "RelativeSpectralPLP model"
@@ -8026,22 +8097,6 @@
       }
     },
     {
-      "@id": "afv:RMSEnergy",
-      "@type": "owl:Class",
-      "rdfs:comment": "RMSEnergy",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "RMSEnergy"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:Crest",
       "@type": "owl:Class",
       "rdfs:comment": "Crest",
@@ -8079,7 +8134,7 @@
       "afo:sequence": {
         "@id": "afv:LinearPredictiveCoding_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "LinearPredictiveCoding model"
@@ -8090,15 +8145,15 @@
       }
     },
     {
-      "@id": "afv:ModulationEnergyModel",
-      "@type": "afo:Model",
-      "afo:sequence": {
-        "@id": "afv:ModulationEnergy_operation_sequence"
-      },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "@id": "afv:HarmonicTristimulus",
+      "@type": "owl:Class",
+      "rdfs:comment": "HarmonicTristimulus",
       "rdfs:label": {
         "@language": "en",
-        "@value": "ModulationEnergy model"
+        "@value": "HarmonicTristimulus"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -8158,15 +8213,15 @@
       }
     },
     {
-      "@id": "afv:HarmonicSpectralRolloff",
-      "@type": "owl:Class",
-      "rdfs:comment": "HarmonicSpectralRolloff",
+      "@id": "afv:SpectralSlope_operation_3",
+      "@type": [
+        "afv:Regression",
+        "afo:LastOperation"
+      ],
+      "rdfs:comment": "SpectralSlope computational sequence step 3",
       "rdfs:label": {
         "@language": "en",
-        "@value": "HarmonicSpectralRolloff"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "SpectralSlope_operation_3"
       },
       "vs:term_status": {
         "@language": "en",
@@ -8197,22 +8252,10 @@
       }
     },
     {
-      "@id": "afv:MPEG7AudioSpectrumBasis",
-      "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:MPEG7AudioSpectrumBasisModel"
-      },
-      "rdfs:comment": "MPEG7AudioSpectrumBasis",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "MPEG7AudioSpectrumBasis"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
+      "@id": "afv:PitchSynchronousZCPA_operation_sequence",
+      "@type": "afo:OperationSequence",
+      "afo:first_operation": {
+        "@id": "afv:PitchSynchronousZCPA_operation_1"
       }
     },
     {
@@ -8229,15 +8272,15 @@
       }
     },
     {
-      "@id": "afv:KullbackLieblerOnset",
-      "@type": "owl:Class",
-      "rdfs:comment": "KullbackLieblerOnsetDetectionFunction",
+      "@id": "afv:MPEG7HarmonicSpectralVariation_operation_4",
+      "@type": [
+        "afv:CrossCorrelation",
+        "afo:LastOperation"
+      ],
+      "rdfs:comment": "MPEG7HarmonicSpectralVariation computational sequence step 4",
       "rdfs:label": {
         "@language": "en",
-        "@value": "KullbackLieblerOnsetDetectionFunction"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "MPEG7HarmonicSpectralVariation_operation_4"
       },
       "vs:term_status": {
         "@language": "en",
@@ -8261,25 +8304,12 @@
       }
     },
     {
-      "@id": "afv:Autoregression",
-      "@type": "owl:Class",
-      "rdfs:comment": "Subclass of Filter from the Audio Feature Ontology",
-      "rdfs:label": "Autoregression",
-      "rdfs:subClassOf": {
-        "@id": "afo:Filter"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:RatescalefrequencyFeaturesModel",
       "@type": "afo:Model",
       "afo:sequence": {
         "@id": "afv:RatescalefrequencyFeatures_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "RatescalefrequencyFeatures model"
@@ -8330,7 +8360,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralCentroid_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralCentroid model"
@@ -8415,10 +8445,19 @@
       }
     },
     {
-      "@id": "afv:NoiseRobustAuditoryFeature_operation_sequence",
-      "@type": "afo:OperationSequence",
-      "afo:first_operation": {
-        "@id": "afv:NoiseRobustAuditoryFeature_operation_1"
+      "@id": "afv:ZeroCrossingRate_operation_2",
+      "@type": [
+        "afo:LastOperation",
+        "afv:LevelCrossingDetector"
+      ],
+      "rdfs:comment": "ZeroCrossingRate computational sequence step 2",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ZeroCrossingRate_operation_2"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -8429,11 +8468,11 @@
         "Mean"
       ],
       "rdfs:label": [
-        "Mean",
         {
           "@language": "en",
           "@value": "Mean"
-        }
+        },
+        "Mean"
       ],
       "rdfs:subClassOf": [
         {
@@ -8470,7 +8509,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralPeakStructure_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralPeakStructure model"
@@ -8529,15 +8568,18 @@
       }
     },
     {
-      "@id": "afv:AverageSquaredDifference",
-      "@type": "owl:Class",
-      "rdfs:comment": "AverageSquaredDifferenceFunction",
+      "@id": "afv:LinearPredictionCepstralCoefficients_operation_2",
+      "@type": [
+        "afo:OptionalOperation",
+        "afv:BandpassFilter"
+      ],
+      "afo:next_operation": {
+        "@id": "afv:LinearPredictionCepstralCoefficients_operation_3"
+      },
+      "rdfs:comment": "LinearPredictionCepstralCoefficients computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "AverageSquaredDifferenceFunction"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "LinearPredictionCepstralCoefficients_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -8557,7 +8599,7 @@
       "afo:sequence": {
         "@id": "afv:ZeroCrossingPeakAmplitudes_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "ZeroCrossingPeakAmplitudes model"
@@ -8568,10 +8610,22 @@
       }
     },
     {
-      "@id": "afv:AdaptiveTimeFrequencyTransform_operation_sequence",
-      "@type": "afo:OperationSequence",
-      "afo:first_operation": {
-        "@id": "afv:AdaptiveTimeFrequencyTransform_operation_1"
+      "@id": "afv:ZeroCrossingRate",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:ZeroCrossingRateModel"
+      },
+      "rdfs:comment": "ZeroCrossingRate",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ZeroCrossingRate"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -8626,6 +8680,22 @@
       }
     },
     {
+      "@id": "afv:LinearPredictionCepstralCoefficients_operation_1",
+      "@type": "afv:Windowing",
+      "afo:next_operation": {
+        "@id": "afv:LinearPredictionCepstralCoefficients_operation_2"
+      },
+      "rdfs:comment": "LinearPredictionCepstralCoefficients computational sequence step 1",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "LinearPredictionCepstralCoefficients_operation_1"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
       "@id": "afv:PerceptualSpectralSpread",
       "@type": "owl:Class",
       "rdfs:comment": "PerceptualSpectralSpread",
@@ -8649,22 +8719,6 @@
       }
     },
     {
-      "@id": "afv:SpectralPeakStructure_operation_1",
-      "@type": "afv:Windowing",
-      "afo:next_operation": {
-        "@id": "afv:SpectralPeakStructure_operation_2"
-      },
-      "rdfs:comment": "SpectralPeakStructure computational sequence step 1",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "SpectralPeakStructure_operation_1"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:VarianceDeltaSpectralPattern",
       "@type": "owl:Class",
       "rdfs:comment": "VarianceDeltaSpectralPattern",
@@ -8681,10 +8735,22 @@
       }
     },
     {
-      "@id": "afv:PitchSynchronousZCPA_operation_sequence",
-      "@type": "afo:OperationSequence",
-      "afo:first_operation": {
-        "@id": "afv:PitchSynchronousZCPA_operation_1"
+      "@id": "afv:MPEG7AudioSpectrumBasis",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:MPEG7AudioSpectrumBasisModel"
+      },
+      "rdfs:comment": "MPEG7AudioSpectrumBasis",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "MPEG7AudioSpectrumBasis"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -8928,11 +8994,11 @@
         "Power"
       ],
       "rdfs:label": [
-        "Power",
         {
           "@language": "en",
           "@value": "Power"
-        }
+        },
+        "Power"
       ],
       "rdfs:subClassOf": [
         {
@@ -8953,7 +9019,7 @@
       "afo:sequence": {
         "@id": "afv:HarmonicConcentration_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "HarmonicConcentration model"
@@ -8964,15 +9030,15 @@
       }
     },
     {
-      "@id": "afv:MelscaleFrequencyCepstralCoefficients_operation_1",
-      "@type": "afv:Windowing",
+      "@id": "afv:MPEG7HarmonicSpectralCentroid_operation_2",
+      "@type": "afv:DiscreteFourierTransform",
       "afo:next_operation": {
-        "@id": "afv:MelscaleFrequencyCepstralCoefficients_operation_2"
+        "@id": "afv:MPEG7HarmonicSpectralCentroid_operation_3"
       },
-      "rdfs:comment": "MelscaleFrequencyCepstralCoefficients computational sequence step 1",
+      "rdfs:comment": "MPEG7HarmonicSpectralCentroid computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MelscaleFrequencyCepstralCoefficients_operation_1"
+        "@value": "MPEG7HarmonicSpectralCentroid_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -8980,12 +9046,34 @@
       }
     },
     {
-      "@id": "afv:Normalization",
+      "@id": "afv:ADRessStereoSpectrum",
       "@type": "owl:Class",
-      "rdfs:comment": "Subclass of Filter from the Audio Feature Ontology",
-      "rdfs:label": "Normalization",
+      "rdfs:comment": "ADRessStereoSpectrum (Azimuth Discrimination and Resynthesis)",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ADRessStereoSpectrum (Azimuth Discrimination and Resynthesis)"
+      },
       "rdfs:subClassOf": {
-        "@id": "afo:Filter"
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:Bandwidth",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:BandwidthModel"
+      },
+      "rdfs:comment": "Bandwidth",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Bandwidth"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -9076,15 +9164,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralCentroid",
+      "@id": "afv:MPEG7AudioSpectrumSpread",
       "@type": "owl:Class",
       "afo:model": {
-        "@id": "afv:MPEG7HarmonicSpectralCentroidModel"
+        "@id": "afv:MPEG7AudioSpectrumSpreadModel"
       },
-      "rdfs:comment": "MPEG7HarmonicSpectralCentroid",
+      "rdfs:comment": "MPEG7AudioSpectrumSpread",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7HarmonicSpectralCentroid"
+        "@value": "MPEG7AudioSpectrumSpread"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -9269,15 +9357,31 @@
       }
     },
     {
-      "@id": "afv:HarmonicConcentration_operation_1",
-      "@type": "afv:Windowing",
-      "afo:next_operation": {
-        "@id": "afv:HarmonicConcentration_operation_2"
-      },
-      "rdfs:comment": "HarmonicConcentration computational sequence step 1",
+      "@id": "afv:HarmonicSpectralDecrease",
+      "@type": "owl:Class",
+      "rdfs:comment": "HarmonicSpectralDecrease",
       "rdfs:label": {
         "@language": "en",
-        "@value": "HarmonicConcentration_operation_1"
+        "@value": "HarmonicSpectralDecrease"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:Flatnessdb",
+      "@type": "owl:Class",
+      "rdfs:comment": "Flatnessdb",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Flatnessdb"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -9322,7 +9426,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7AudioWaveform_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7AudioWaveform model"
@@ -9415,8 +9519,8 @@
     {
       "@id": "afv:LineSpectralFrequencies_operation_3",
       "@type": [
-        "afv:PolynomialRootFinding",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:PolynomialRootFinding"
       ],
       "rdfs:comment": "LineSpectralFrequencies computational sequence step 3",
       "rdfs:label": {
@@ -9493,12 +9597,12 @@
       }
     },
     {
-      "@id": "afv:PerceptualSpread",
+      "@id": "afv:AttackLeap",
       "@type": "owl:Class",
-      "rdfs:comment": "PerceptualSpread",
+      "rdfs:comment": "AttackLeap",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PerceptualSpread"
+        "@value": "AttackLeap"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -9546,7 +9650,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralPeaks_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralPeaks model"
@@ -9570,12 +9674,18 @@
       }
     },
     {
-      "@id": "afv:PrincipalComponentAnalysis",
-      "@type": "owl:Class",
-      "rdfs:comment": "Subclass of Transformation from the Audio Feature Ontology",
-      "rdfs:label": "Principal Component Analysis",
-      "rdfs:subClassOf": {
-        "@id": "afo:Transformation"
+      "@id": "afv:Bandwidth_operation_4",
+      "@type": [
+        "afo:OptionalOperation",
+        "afv:Logarithm"
+      ],
+      "afo:next_operation": {
+        "@id": "afv:Bandwidth_operation_5"
+      },
+      "rdfs:comment": "Bandwidth computational sequence step 4",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Bandwidth_operation_4"
       },
       "vs:term_status": {
         "@language": "en",
@@ -9583,15 +9693,12 @@
       }
     },
     {
-      "@id": "afv:PitchSynchronousZCPA",
+      "@id": "afv:ChromagramandBassChromagram",
       "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:PitchSynchronousZCPAModel"
-      },
-      "rdfs:comment": "PitchSynchronousZCPA",
+      "rdfs:comment": "ChromagramandBassChromagram",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PitchSynchronousZCPA"
+        "@value": "ChromagramandBassChromagram"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -9607,7 +9714,7 @@
       "afo:sequence": {
         "@id": "afv:BarkscaleFrequencyCepstralCoefficients_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "BarkscaleFrequencyCepstralCoefficients model"
@@ -9681,10 +9788,10 @@
       ],
       "rdfs:subClassOf": [
         {
-          "@id": "afo:AudioFeature"
+          "@id": "afo:Transformation"
         },
         {
-          "@id": "afo:Transformation"
+          "@id": "afo:AudioFeature"
         }
       ],
       "vs:term_status": {
@@ -9747,8 +9854,8 @@
       "@id": "afv:Median",
       "@type": "owl:Class",
       "rdfs:comment": [
-        "Subclass of Aggregation from the Audio Feature Ontology",
-        "Median"
+        "Median",
+        "Subclass of Aggregation from the Audio Feature Ontology"
       ],
       "rdfs:label": [
         "Median",
@@ -9759,10 +9866,10 @@
       ],
       "rdfs:subClassOf": [
         {
-          "@id": "afo:AudioFeature"
+          "@id": "afo:Aggregation"
         },
         {
-          "@id": "afo:Aggregation"
+          "@id": "afo:AudioFeature"
         }
       ],
       "vs:term_status": {
@@ -9824,7 +9931,7 @@
       "afo:sequence": {
         "@id": "afv:ShortTimeEnergy_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "ShortTimeEnergy model"
@@ -9854,12 +9961,15 @@
       }
     },
     {
-      "@id": "afv:TransientSteadyStateSeparation",
+      "@id": "afv:AuditoryFilterBankTemporalEnvelopes",
       "@type": "owl:Class",
-      "rdfs:comment": "TransientSteadyStateSeparation",
+      "afo:model": {
+        "@id": "afv:AuditoryFilterBankTemporalEnvelopesModel"
+      },
+      "rdfs:comment": "AuditoryFilterBankTemporalEnvelopes",
       "rdfs:label": {
         "@language": "en",
-        "@value": "TransientSteadyStateSeparation"
+        "@value": "AuditoryFilterBankTemporalEnvelopes"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -9882,7 +9992,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralRolloff_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralRolloff model"
@@ -9933,7 +10043,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7LogAttackTime_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7LogAttackTime model"
@@ -9965,7 +10075,7 @@
       "afo:sequence": {
         "@id": "afv:Inharmonicity_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "Inharmonicity model"
@@ -9981,7 +10091,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7SpectralCentroid_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7SpectralCentroid model"
@@ -10212,9 +10322,9 @@
     {
       "@id": "afv:MPEG7AudioSpectrumBasis_operation_7",
       "@type": [
+        "afo:OptionalOperation",
         "afo:LastOperation",
-        "afv:IndependentComponentAnalysis",
-        "afo:OptionalOperation"
+        "afv:IndependentComponentAnalysis"
       ],
       "rdfs:comment": "MPEG7AudioSpectrumBasis computational sequence step 7",
       "rdfs:label": {
@@ -10479,8 +10589,8 @@
     {
       "@id": "afv:SpectralCentroid_operation_4",
       "@type": [
-        "afv:Logarithm",
-        "afo:OptionalOperation"
+        "afo:OptionalOperation",
+        "afv:Logarithm"
       ],
       "afo:next_operation": {
         "@id": "afv:SpectralCentroid_operation_5"
@@ -10498,8 +10608,8 @@
     {
       "@id": "afv:SpectralCentroid_operation_5",
       "@type": [
-        "afv:Mean",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:Mean"
       ],
       "rdfs:comment": "SpectralCentroid computational sequence step 5",
       "rdfs:label": {
@@ -10530,8 +10640,8 @@
     {
       "@id": "afv:SpectralCentroid_operation_3",
       "@type": [
-        "afv:Spectralbinning",
-        "afo:OptionalOperation"
+        "afo:OptionalOperation",
+        "afv:Spectralbinning"
       ],
       "afo:next_operation": {
         "@id": "afv:SpectralCentroid_operation_4"
@@ -10614,15 +10724,12 @@
       }
     },
     {
-      "@id": "afv:SpectralRolloff_operation_3",
-      "@type": [
-        "afv:Percentile",
-        "afo:LastOperation"
-      ],
-      "rdfs:comment": "SpectralRolloff computational sequence step 3",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "SpectralRolloff_operation_3"
+      "@id": "afv:IndependentComponentAnalysis",
+      "@type": "owl:Class",
+      "rdfs:comment": "Subclass of Transformation from the Audio Feature Ontology",
+      "rdfs:label": "Independent Component Analysis",
+      "rdfs:subClassOf": {
+        "@id": "afo:Transformation"
       },
       "vs:term_status": {
         "@language": "en",
@@ -10717,6 +10824,22 @@
       }
     },
     {
+      "@id": "afv:SignalAutoCorrelation",
+      "@type": "owl:Class",
+      "rdfs:comment": "SignalAutoCorrelationFunction",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "SignalAutoCorrelationFunction"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
       "@id": "afv:HarmonicProminence_operation_sequence",
       "@type": "afo:OperationSequence",
       "afo:first_operation": {
@@ -10740,12 +10863,12 @@
       }
     },
     {
-      "@id": "afv:SpectralFlatnessAllBands",
+      "@id": "afv:MELODIAMelodyExtraction",
       "@type": "owl:Class",
-      "rdfs:comment": "SpectralFlatnessAllBands",
+      "rdfs:comment": "MELODIAMelodyExtraction",
       "rdfs:label": {
         "@language": "en",
-        "@value": "SpectralFlatnessAllBands"
+        "@value": "MELODIAMelodyExtraction"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -10841,7 +10964,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralCenter_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralCenter model"
@@ -11030,7 +11153,7 @@
       "afo:sequence": {
         "@id": "afv:MelscaleFrequencyCepstralCoefficients_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MelscaleFrequencyCepstralCoefficients model"
@@ -11046,7 +11169,7 @@
       "afo:sequence": {
         "@id": "afv:SubbandSpectralFlux_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SubbandSpectralFlux model"
@@ -11137,22 +11260,6 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralDeviationModel",
-      "@type": "afo:Model",
-      "afo:sequence": {
-        "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_sequence"
-      },
-      "rdfs:comment": "Computational model for GeometricMean",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "MPEG7HarmonicSpectralDeviation model"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:Spectrum",
       "@type": "owl:Class",
       "rdfs:comment": "Spectrum",
@@ -11169,41 +11276,25 @@
       }
     },
     {
-      "@id": "afv:TonicPitch",
-      "@type": "owl:Class",
-      "rdfs:comment": "TonicPitch",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "TonicPitch"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:DiscreteWaveletTransform",
       "@type": "owl:Class",
       "rdfs:comment": [
-        "Subclass of Transformation from the Audio Feature Ontology",
-        "DiscreteWaveletTransform"
+        "DiscreteWaveletTransform",
+        "Subclass of Transformation from the Audio Feature Ontology"
       ],
       "rdfs:label": [
-        "Discrete Wavelet Transform",
         {
           "@language": "en",
           "@value": "DiscreteWaveletTransform"
-        }
+        },
+        "Discrete Wavelet Transform"
       ],
       "rdfs:subClassOf": [
         {
-          "@id": "afo:Transformation"
+          "@id": "afo:AudioFeature"
         },
         {
-          "@id": "afo:AudioFeature"
+          "@id": "afo:Transformation"
         }
       ],
       "vs:term_status": {
@@ -11228,31 +11319,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7AudioSpectrumSpread",
+      "@id": "afv:MPEG7HarmonicSpectralCentroid",
       "@type": "owl:Class",
       "afo:model": {
-        "@id": "afv:MPEG7AudioSpectrumSpreadModel"
+        "@id": "afv:MPEG7HarmonicSpectralCentroidModel"
       },
-      "rdfs:comment": "MPEG7AudioSpectrumSpread",
+      "rdfs:comment": "MPEG7HarmonicSpectralCentroid",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7AudioSpectrumSpread"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:SpectralStandardDeviation",
-      "@type": "owl:Class",
-      "rdfs:comment": "SpectralStandardDeviation",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "SpectralStandardDeviation"
+        "@value": "MPEG7HarmonicSpectralCentroid"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -11284,7 +11359,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralCrest_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralCrest model"
@@ -11295,12 +11370,12 @@
       }
     },
     {
-      "@id": "afv:RhythmHistogram",
+      "@id": "afv:EffectiveDuration",
       "@type": "owl:Class",
-      "rdfs:comment": "RhythmHistogram",
+      "rdfs:comment": "EffectiveDuration",
       "rdfs:label": {
         "@language": "en",
-        "@value": "RhythmHistogram"
+        "@value": "EffectiveDuration"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -11332,7 +11407,7 @@
       "afo:sequence": {
         "@id": "afv:Bandwidth_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "Bandwidth model"
@@ -11375,15 +11450,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_2",
-      "@type": "afv:DiscreteFourierTransform",
+      "@id": "afv:NoiseRobustAuditoryFeature_operation_2",
+      "@type": "afv:BandpassFilterBank",
       "afo:next_operation": {
-        "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_3"
+        "@id": "afv:NoiseRobustAuditoryFeature_operation_3"
       },
-      "rdfs:comment": "MPEG7HarmonicSpectralDeviation computational sequence step 2",
+      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7HarmonicSpectralDeviation_operation_2"
+        "@value": "NoiseRobustAuditoryFeature_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -11391,15 +11466,15 @@
       }
     },
     {
-      "@id": "afv:PolyphonicTranscription",
-      "@type": "owl:Class",
-      "rdfs:comment": "PolyphonicTranscription",
+      "@id": "afv:NoiseRobustAuditoryFeature_operation_3",
+      "@type": "afv:WeightingFunction",
+      "afo:next_operation": {
+        "@id": "afv:NoiseRobustAuditoryFeature_operation_4"
+      },
+      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 3",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PolyphonicTranscription"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "NoiseRobustAuditoryFeature_operation_3"
       },
       "vs:term_status": {
         "@language": "en",
@@ -11423,15 +11498,15 @@
       }
     },
     {
-      "@id": "afv:NoiseRobustAuditoryFeature_operation_5",
-      "@type": "afv:LowpassFilter",
+      "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_5",
+      "@type": "afv:Logarithm",
       "afo:next_operation": {
-        "@id": "afv:NoiseRobustAuditoryFeature_operation_6"
+        "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_6"
       },
-      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 5",
+      "rdfs:comment": "MPEG7HarmonicSpectralDeviation computational sequence step 5",
       "rdfs:label": {
         "@language": "en",
-        "@value": "NoiseRobustAuditoryFeature_operation_5"
+        "@value": "MPEG7HarmonicSpectralDeviation_operation_5"
       },
       "vs:term_status": {
         "@language": "en",
@@ -11439,15 +11514,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralDeviation_operation_6",
-      "@type": [
-        "afo:LastOperation",
-        "afv:Deviation"
-      ],
-      "rdfs:comment": "MPEG7HarmonicSpectralDeviation computational sequence step 6",
+      "@id": "afv:NoiseRobustAuditoryFeature_operation_6",
+      "@type": "afv:Logarithm",
+      "afo:next_operation": {
+        "@id": "afv:NoiseRobustAuditoryFeature_operation_7"
+      },
+      "rdfs:comment": "NoiseRobustAuditoryFeature computational sequence step 6",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7HarmonicSpectralDeviation_operation_6"
+        "@value": "NoiseRobustAuditoryFeature_operation_6"
       },
       "vs:term_status": {
         "@language": "en",
@@ -11511,8 +11586,8 @@
     {
       "@id": "afv:HarmonicEnergyEntropy_operation_4",
       "@type": [
-        "afv:Entropy",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:Entropy"
       ],
       "rdfs:comment": "HarmonicEnergyEntropy computational sequence step 4",
       "rdfs:label": {
@@ -11534,22 +11609,6 @@
       "rdfs:label": {
         "@language": "en",
         "@value": "HarmonicEnergyEntropy_operation_1"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
-      "@id": "afv:BeatSpectrum_operation_2",
-      "@type": "afv:DiscreteFourierTransform",
-      "afo:next_operation": {
-        "@id": "afv:BeatSpectrum_operation_3"
-      },
-      "rdfs:comment": "BeatSpectrum computational sequence step 2",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "BeatSpectrum_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -11656,22 +11715,6 @@
       }
     },
     {
-      "@id": "afv:EventDensity",
-      "@type": "owl:Class",
-      "rdfs:comment": "EventDensity",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "EventDensity"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:MPEG7AudioFundamentalFrequency",
       "@type": "owl:Class",
       "afo:model": {
@@ -11696,7 +11739,7 @@
       "afo:sequence": {
         "@id": "afv:BeatTracker_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "BeatTracker model"
@@ -11712,7 +11755,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7HarmonicSpectralVariation_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7HarmonicSpectralVariation model"
@@ -11918,7 +11961,7 @@
       "afo:sequence": {
         "@id": "afv:HarmonicDerivate_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "HarmonicDerivate model"
@@ -11933,6 +11976,25 @@
       "@type": "afo:OperationSequence",
       "afo:first_operation": {
         "@id": "afv:BandPeriodicity_operation_1"
+      }
+    },
+    {
+      "@id": "afv:SpectralPeakStructure",
+      "@type": "owl:Class",
+      "afo:model": {
+        "@id": "afv:SpectralPeakStructureModel"
+      },
+      "rdfs:comment": "SpectralPeakStructure",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "SpectralPeakStructure"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -12064,7 +12126,7 @@
       "afo:sequence": {
         "@id": "afv:DaubechiesWaveletCoefficientHistogram_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "DaubechiesWaveletCoefficientHistogram model"
@@ -12091,15 +12153,15 @@
       }
     },
     {
-      "@id": "afv:AutocorrelationMFCCs_operation_5",
-      "@type": "afv:Spectralbinning",
+      "@id": "afv:PerceptualLinearPrediction_operation_5",
+      "@type": "afv:WeightingFunction",
       "afo:next_operation": {
-        "@id": "afv:AutocorrelationMFCCs_operation_6"
+        "@id": "afv:PerceptualLinearPrediction_operation_6"
       },
-      "rdfs:comment": "AutocorrelationMFCCs computational sequence step 5",
+      "rdfs:comment": "PerceptualLinearPrediction computational sequence step 5",
       "rdfs:label": {
         "@language": "en",
-        "@value": "AutocorrelationMFCCs_operation_5"
+        "@value": "PerceptualLinearPrediction_operation_5"
       },
       "vs:term_status": {
         "@language": "en",
@@ -12219,15 +12281,15 @@
       }
     },
     {
-      "@id": "afv:HarmonicSpectralDecrease",
-      "@type": "owl:Class",
-      "rdfs:comment": "HarmonicSpectralDecrease",
+      "@id": "afv:HarmonicConcentration_operation_1",
+      "@type": "afv:Windowing",
+      "afo:next_operation": {
+        "@id": "afv:HarmonicConcentration_operation_2"
+      },
+      "rdfs:comment": "HarmonicConcentration computational sequence step 1",
       "rdfs:label": {
         "@language": "en",
-        "@value": "HarmonicSpectralDecrease"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "HarmonicConcentration_operation_1"
       },
       "vs:term_status": {
         "@language": "en",
@@ -12496,8 +12558,8 @@
     {
       "@id": "afv:PhaseSpaceFeatures_operation_2",
       "@type": [
-        "afo:LastOperation",
-        "afv:PhaseSpaceEmbedding"
+        "afv:PhaseSpaceEmbedding",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "PhaseSpaceFeatures computational sequence step 2",
       "rdfs:label": {
@@ -12579,7 +12641,7 @@
       "afo:sequence": {
         "@id": "afv:BandPeriodicity_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "BandPeriodicity model"
@@ -12638,15 +12700,15 @@
       }
     },
     {
-      "@id": "afv:PerceptualLinearPrediction_operation_5",
-      "@type": "afv:WeightingFunction",
+      "@id": "afv:AutocorrelationMFCCs_operation_5",
+      "@type": "afv:Spectralbinning",
       "afo:next_operation": {
-        "@id": "afv:PerceptualLinearPrediction_operation_6"
+        "@id": "afv:AutocorrelationMFCCs_operation_6"
       },
-      "rdfs:comment": "PerceptualLinearPrediction computational sequence step 5",
+      "rdfs:comment": "AutocorrelationMFCCs computational sequence step 5",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PerceptualLinearPrediction_operation_5"
+        "@value": "AutocorrelationMFCCs_operation_5"
       },
       "vs:term_status": {
         "@language": "en",
@@ -12734,27 +12796,16 @@
       }
     },
     {
-      "@id": "afv:Deviation",
-      "@type": "owl:Class",
-      "rdfs:comment": [
-        "Deviation",
-        "Subclass of Aggregation from the Audio Feature Ontology"
-      ],
-      "rdfs:label": [
-        "Deviation",
-        {
-          "@language": "en",
-          "@value": "Deviation"
-        }
-      ],
-      "rdfs:subClassOf": [
-        {
-          "@id": "afo:AudioFeature"
-        },
-        {
-          "@id": "afo:Aggregation"
-        }
-      ],
+      "@id": "afv:PerceptualLinearPrediction_operation_6",
+      "@type": "afv:DiscreteCosineTransform",
+      "afo:next_operation": {
+        "@id": "afv:PerceptualLinearPrediction_operation_7"
+      },
+      "rdfs:comment": "PerceptualLinearPrediction computational sequence step 6",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "PerceptualLinearPrediction_operation_6"
+      },
       "vs:term_status": {
         "@language": "en",
         "@value": "testing"
@@ -12809,15 +12860,15 @@
       }
     },
     {
-      "@id": "afv:PerceptualLinearPrediction_operation_1",
-      "@type": "afv:Windowing",
-      "afo:next_operation": {
-        "@id": "afv:PerceptualLinearPrediction_operation_2"
-      },
-      "rdfs:comment": "PerceptualLinearPrediction computational sequence step 1",
+      "@id": "afv:DeltaDeltaMFCC",
+      "@type": "owl:Class",
+      "rdfs:comment": "DeltaDeltaMFCC",
       "rdfs:label": {
         "@language": "en",
-        "@value": "PerceptualLinearPrediction_operation_1"
+        "@value": "DeltaDeltaMFCC"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -12825,15 +12876,31 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralSpread_operation_3",
-      "@type": "afv:HarmonicPeakDetection",
+      "@id": "afv:MPEG7AudioSpectrumSpread_operation_4",
+      "@type": "afv:Logarithm",
       "afo:next_operation": {
-        "@id": "afv:MPEG7HarmonicSpectralSpread_operation_4"
+        "@id": "afv:MPEG7AudioSpectrumSpread_operation_5"
       },
-      "rdfs:comment": "MPEG7HarmonicSpectralSpread computational sequence step 3",
+      "rdfs:comment": "MPEG7AudioSpectrumSpread computational sequence step 4",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7HarmonicSpectralSpread_operation_3"
+        "@value": "MPEG7AudioSpectrumSpread_operation_4"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
+      }
+    },
+    {
+      "@id": "afv:Bandwidth_operation_5",
+      "@type": [
+        "afo:LastOperation",
+        "afv:Deviation"
+      ],
+      "rdfs:comment": "Bandwidth computational sequence step 5",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Bandwidth_operation_5"
       },
       "vs:term_status": {
         "@language": "en",
@@ -12905,15 +12972,15 @@
       }
     },
     {
-      "@id": "afv:RMSEnergyEnvelope",
-      "@type": "owl:Class",
-      "rdfs:comment": "RMSEnergyEnvelope",
+      "@id": "afv:RhythmPatterns_operation_1",
+      "@type": "afv:Windowing",
+      "afo:next_operation": {
+        "@id": "afv:RhythmPatterns_operation_2"
+      },
+      "rdfs:comment": "RhythmPatterns computational sequence step 1",
       "rdfs:label": {
         "@language": "en",
-        "@value": "RMSEnergyEnvelope"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "RhythmPatterns_operation_1"
       },
       "vs:term_status": {
         "@language": "en",
@@ -12955,8 +13022,8 @@
     {
       "@id": "afv:MPEG7HarmonicSpectralSpread_operation_4",
       "@type": [
-        "afo:LastOperation",
-        "afv:Deviation"
+        "afv:Deviation",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "MPEG7HarmonicSpectralSpread computational sequence step 4",
       "rdfs:label": {
@@ -12974,7 +13041,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7HarmonicSpectralSpread_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7HarmonicSpectralSpread model"
@@ -13041,7 +13108,7 @@
       "afo:sequence": {
         "@id": "afv:PitchProfile_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "PitchProfile model"
@@ -13052,15 +13119,15 @@
       }
     },
     {
-      "@id": "afv:RhythmPatterns_operation_2",
-      "@type": "afv:DiscreteFourierTransform",
+      "@id": "afv:Sharpness_operation_3",
+      "@type": "afv:Spectralbinning",
       "afo:next_operation": {
-        "@id": "afv:RhythmPatterns_operation_3"
+        "@id": "afv:Sharpness_operation_4"
       },
-      "rdfs:comment": "RhythmPatterns computational sequence step 2",
+      "rdfs:comment": "Sharpness computational sequence step 3",
       "rdfs:label": {
         "@language": "en",
-        "@value": "RhythmPatterns_operation_2"
+        "@value": "Sharpness_operation_3"
       },
       "vs:term_status": {
         "@language": "en",
@@ -13123,15 +13190,15 @@
       }
     },
     {
-      "@id": "afv:HarmonicEnergyEntropyModel",
-      "@type": "afo:Model",
-      "afo:sequence": {
-        "@id": "afv:HarmonicEnergyEntropy_operation_sequence"
-      },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "@id": "afv:NonSilentRegions",
+      "@type": "owl:Class",
+      "rdfs:comment": "NonSilentRegions",
       "rdfs:label": {
         "@language": "en",
-        "@value": "HarmonicEnergyEntropy model"
+        "@value": "NonSilentRegions"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
       },
       "vs:term_status": {
         "@language": "en",
@@ -13178,15 +13245,15 @@
       }
     },
     {
-      "@id": "afv:AdaptiveSpectrogram",
-      "@type": "owl:Class",
-      "rdfs:comment": "AdaptiveSpectrogram",
+      "@id": "afv:IntegralLoudness_operation_6",
+      "@type": "afv:ExponentialFunction",
+      "afo:next_operation": {
+        "@id": "afv:IntegralLoudness_operation_7"
+      },
+      "rdfs:comment": "IntegralLoudness computational sequence step 6",
       "rdfs:label": {
         "@language": "en",
-        "@value": "AdaptiveSpectrogram"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "IntegralLoudness_operation_6"
       },
       "vs:term_status": {
         "@language": "en",
@@ -13434,15 +13501,15 @@
       }
     },
     {
-      "@id": "afv:Flatnessdb",
-      "@type": "owl:Class",
-      "rdfs:comment": "Flatnessdb",
+      "@id": "afv:BeatSpectrum_operation_2",
+      "@type": "afv:DiscreteFourierTransform",
+      "afo:next_operation": {
+        "@id": "afv:BeatSpectrum_operation_3"
+      },
+      "rdfs:comment": "BeatSpectrum computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Flatnessdb"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "BeatSpectrum_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -13450,10 +13517,19 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralVariation_operation_sequence",
-      "@type": "afo:OperationSequence",
-      "afo:first_operation": {
-        "@id": "afv:MPEG7HarmonicSpectralVariation_operation_1"
+      "@id": "afv:Cepstrum",
+      "@type": "owl:Class",
+      "rdfs:comment": "Cepstrum",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Cepstrum"
+      },
+      "rdfs:subClassOf": {
+        "@id": "afo:AudioFeature"
+      },
+      "vs:term_status": {
+        "@language": "en",
+        "@value": "testing"
       }
     },
     {
@@ -13627,7 +13703,7 @@
       "afo:sequence": {
         "@id": "afv:DWPTbasedRhythmFeature_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "DWPTbasedRhythmFeature model"
@@ -13657,28 +13733,12 @@
       }
     },
     {
-      "@id": "afv:PerceptualLinearPrediction_operation_6",
-      "@type": "afv:DiscreteCosineTransform",
-      "afo:next_operation": {
-        "@id": "afv:PerceptualLinearPrediction_operation_7"
-      },
-      "rdfs:comment": "PerceptualLinearPrediction computational sequence step 6",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "PerceptualLinearPrediction_operation_6"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:MPEG7AudioSpectrumBasisModel",
       "@type": "afo:Model",
       "afo:sequence": {
         "@id": "afv:MPEG7AudioSpectrumBasis_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7AudioSpectrumBasis model"
@@ -13765,7 +13825,7 @@
       "afo:sequence": {
         "@id": "afv:MPEG7AudioSpectrumSpread_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "MPEG7AudioSpectrumSpread model"
@@ -13783,22 +13843,6 @@
       }
     },
     {
-      "@id": "afv:MELODIAMelodyExtraction",
-      "@type": "owl:Class",
-      "rdfs:comment": "MELODIAMelodyExtraction",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "MELODIAMelodyExtraction"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:ModulationEnergy_operation_sequence",
       "@type": "afo:OperationSequence",
       "afo:first_operation": {
@@ -13813,15 +13857,15 @@
       }
     },
     {
-      "@id": "afv:ChromagramandBassChromagram",
-      "@type": "owl:Class",
-      "rdfs:comment": "ChromagramandBassChromagram",
+      "@id": "afv:PerceptualLinearPrediction_operation_1",
+      "@type": "afv:Windowing",
+      "afo:next_operation": {
+        "@id": "afv:PerceptualLinearPrediction_operation_2"
+      },
+      "rdfs:comment": "PerceptualLinearPrediction computational sequence step 1",
       "rdfs:label": {
         "@language": "en",
-        "@value": "ChromagramandBassChromagram"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@value": "PerceptualLinearPrediction_operation_1"
       },
       "vs:term_status": {
         "@language": "en",
@@ -13834,7 +13878,7 @@
       "afo:sequence": {
         "@id": "afv:AuditoryFilterBankTemporalEnvelopes_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "AuditoryFilterBankTemporalEnvelopes model"
@@ -13972,8 +14016,8 @@
     {
       "@id": "afv:AmplitudeDescriptor_operation_6",
       "@type": [
-        "afo:LastOperation",
-        "afv:Deviation"
+        "afv:Deviation",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "AmplitudeDescriptor computational sequence step 6",
       "rdfs:label": {
@@ -14092,18 +14136,12 @@
       }
     },
     {
-      "@id": "afv:Bandwidth",
+      "@id": "afv:Normalization",
       "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:BandwidthModel"
-      },
-      "rdfs:comment": "Bandwidth",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Bandwidth"
-      },
+      "rdfs:comment": "Subclass of Filter from the Audio Feature Ontology",
+      "rdfs:label": "Normalization",
       "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
+        "@id": "afo:Filter"
       },
       "vs:term_status": {
         "@language": "en",
@@ -14205,15 +14243,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7HarmonicSpectralCentroid_operation_2",
-      "@type": "afv:DiscreteFourierTransform",
-      "afo:next_operation": {
-        "@id": "afv:MPEG7HarmonicSpectralCentroid_operation_3"
-      },
-      "rdfs:comment": "MPEG7HarmonicSpectralCentroid computational sequence step 2",
+      "@id": "afv:Volume_operation_2",
+      "@type": [
+        "afv:RootMeanSquare",
+        "afo:LastOperation"
+      ],
+      "rdfs:comment": "Volume computational sequence step 2",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7HarmonicSpectralCentroid_operation_2"
+        "@value": "Volume_operation_2"
       },
       "vs:term_status": {
         "@language": "en",
@@ -14253,12 +14291,12 @@
       }
     },
     {
-      "@id": "afv:SignalAutoCorrelation",
+      "@id": "afv:AutoCorrelationFFT",
       "@type": "owl:Class",
-      "rdfs:comment": "SignalAutoCorrelationFunction",
+      "rdfs:comment": "AutoCorrelationFFT",
       "rdfs:label": {
         "@language": "en",
-        "@value": "SignalAutoCorrelationFunction"
+        "@value": "AutoCorrelationFFT"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -14301,22 +14339,6 @@
       }
     },
     {
-      "@id": "afv:Decaytime",
-      "@type": "owl:Class",
-      "rdfs:comment": "Decaytime",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Decaytime"
-      },
-      "rdfs:subClassOf": {
-        "@id": "afo:AudioFeature"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:ModifiedGroupDelay",
       "@type": "owl:Class",
       "afo:model": {
@@ -14348,7 +14370,7 @@
       "afo:sequence": {
         "@id": "afv:AdaptiveTimeFrequencyTransform_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "AdaptiveTimeFrequencyTransform model"
@@ -14444,7 +14466,7 @@
       "afo:sequence": {
         "@id": "afv:PitchHistogram_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "PitchHistogram model"
@@ -14503,25 +14525,6 @@
       }
     },
     {
-      "@id": "afv:Bandwidth_operation_4",
-      "@type": [
-        "afo:OptionalOperation",
-        "afv:Logarithm"
-      ],
-      "afo:next_operation": {
-        "@id": "afv:Bandwidth_operation_5"
-      },
-      "rdfs:comment": "Bandwidth computational sequence step 4",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Bandwidth_operation_4"
-      },
-      "vs:term_status": {
-        "@language": "en",
-        "@value": "testing"
-      }
-    },
-    {
       "@id": "afv:MPEG7TemporalCentroid",
       "@type": "owl:Class",
       "afo:model": {
@@ -14546,7 +14549,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralFlux_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralFlux model"
@@ -14589,15 +14592,15 @@
       }
     },
     {
-      "@id": "afv:MPEG7AudioSpectrumSpread_operation_4",
-      "@type": "afv:Logarithm",
+      "@id": "afv:MPEG7HarmonicSpectralSpread_operation_3",
+      "@type": "afv:HarmonicPeakDetection",
       "afo:next_operation": {
-        "@id": "afv:MPEG7AudioSpectrumSpread_operation_5"
+        "@id": "afv:MPEG7HarmonicSpectralSpread_operation_4"
       },
-      "rdfs:comment": "MPEG7AudioSpectrumSpread computational sequence step 4",
+      "rdfs:comment": "MPEG7HarmonicSpectralSpread computational sequence step 3",
       "rdfs:label": {
         "@language": "en",
-        "@value": "MPEG7AudioSpectrumSpread_operation_4"
+        "@value": "MPEG7HarmonicSpectralSpread_operation_3"
       },
       "vs:term_status": {
         "@language": "en",
@@ -14726,8 +14729,8 @@
     {
       "@id": "afv:DWPTbasedRhythmFeature_operation_5",
       "@type": [
-        "afo:LastOperation",
-        "afv:Histogram"
+        "afv:Histogram",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "DWPTbasedRhythmFeature computational sequence step 5",
       "rdfs:label": {
@@ -14756,15 +14759,12 @@
       }
     },
     {
-      "@id": "afv:SpectralPeakStructure",
+      "@id": "afv:SpectralStandardDeviation",
       "@type": "owl:Class",
-      "afo:model": {
-        "@id": "afv:SpectralPeakStructureModel"
-      },
-      "rdfs:comment": "SpectralPeakStructure",
+      "rdfs:comment": "SpectralStandardDeviation",
       "rdfs:label": {
         "@language": "en",
-        "@value": "SpectralPeakStructure"
+        "@value": "SpectralStandardDeviation"
       },
       "rdfs:subClassOf": {
         "@id": "afo:AudioFeature"
@@ -14815,7 +14815,7 @@
       "afo:sequence": {
         "@id": "afv:SpectralDispersion_operation_sequence"
       },
-      "rdfs:comment": "Computational model for GeometricMean",
+      "rdfs:comment": "Computational model for SpectralSmoothness",
       "rdfs:label": {
         "@language": "en",
         "@value": "SpectralDispersion model"
@@ -14828,8 +14828,8 @@
     {
       "@id": "afv:MPEG7AudioHarmonicity_operation_3",
       "@type": [
-        "afv:Maximum",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:Maximum"
       ],
       "rdfs:comment": "MPEG7AudioHarmonicity computational sequence step 3",
       "rdfs:label": {
@@ -14844,8 +14844,8 @@
     {
       "@id": "afv:HarmonicDerivate_operation_4",
       "@type": [
-        "afo:LastOperation",
-        "afv:DerivationDifference"
+        "afv:DerivationDifference",
+        "afo:LastOperation"
       ],
       "rdfs:comment": "HarmonicDerivate computational sequence step 4",
       "rdfs:label": {
@@ -14924,8 +14924,8 @@
     {
       "@id": "afv:CyclicBeatSpectrum_operation_9",
       "@type": [
-        "afv:PeakDetection",
-        "afo:LastOperation"
+        "afo:LastOperation",
+        "afv:PeakDetection"
       ],
       "rdfs:comment": "CyclicBeatSpectrum computational sequence step 9",
       "rdfs:label": {
